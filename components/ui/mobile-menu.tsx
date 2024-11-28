@@ -79,16 +79,34 @@ export default function MobileMenu() {
                 className="flex font-medium text-slate-800 hover:text-blue-600 py-2"
                 onClick={() => setMobileNavOpen(false)}
               >
-                O Escritório
+                Sobre
               </Link>
             </li>
             <li>
               <Link
-                href="/advogado-para-marketplace"
+                href="/#marketplaces"
                 className="flex font-medium text-slate-800 hover:text-blue-600 py-2"
                 onClick={() => setMobileNavOpen(false)}
               >
-                Marketplace
+                Marketplaces
+              </Link>
+            </li>
+            <li>
+              <Link
+                href="/#areas-de-atuacao"
+                className="flex font-medium text-slate-800 hover:text-blue-600 py-2"
+                onClick={() => setMobileNavOpen(false)}
+              >
+                Áreas de Atuação
+              </Link>
+            </li>
+            <li>
+              <Link
+                href="/#faq"
+                className="flex font-medium text-slate-800 hover:text-blue-600 py-2"
+                onClick={() => setMobileNavOpen(false)}
+              >
+                Perguntas Frequentes
               </Link>
             </li>
           </ul>

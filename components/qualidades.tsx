@@ -1,24 +1,13 @@
-export default function FeaturesBlocks() {
+export default function Qualidades() {
   return (
     <section>
       <div className="max-w-6xl mx-auto px-4 sm:px-6">
-        <div className="py-12 md:py-32">
+        <div className="py-12 md:py-20 border-t border-slate-200">
           {/* Items */}
           <div
             className="relative max-w-sm mx-auto grid gap-16 md:grid-cols-2 lg:grid-cols-3 lg:gap-y-20 items-start md:max-w-2xl lg:max-w-none"
             data-aos-id-blocks
           >
-            {/* Lines decoration */}
-            <div
-              className="absolute inset-0 -my-8 md:-my-12 pointer-events-none hidden md:flex"
-              aria-hidden="true"
-            >
-              <div className="h-full w-full border-l last:border-r odd:hidden lg:odd:block border-slate-100"></div>
-              <div className="h-full w-full border-l last:border-r odd:hidden lg:odd:block border-slate-100"></div>
-              <div className="h-full w-full border-l last:border-r odd:hidden lg:odd:block border-slate-100"></div>
-              <div className="h-full w-full border-l last:border-r odd:hidden lg:odd:block border-slate-100"></div>
-            </div>
-
             {/* 1st item */}
             <div
               className="relative"
@@ -329,10 +318,10 @@ export default function FeaturesBlocks() {
                 <use fill="url(#fb3-e)" xlinkHref="#fb3-d" />
               </svg>
               <h3 className="h4 font-playfair-display mb-2">
-                Comunicação simples e direta
+                Comunicação simples
               </h3>
               <p className="text-lg text-slate-500">
-                Sem termos técnicos, de maneira que qualquer um entende.
+                Sem termos técnicos exagerados, fácil de entender.
               </p>
             </div>
           </div>

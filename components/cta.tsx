@@ -1,5 +1,6 @@
 import Link from "next/link";
 import Image from "next/image";
+import { IconBrandWhatsapp } from "@tabler/icons-react";
 
 export default function Cta() {
   return (
@@ -25,18 +26,15 @@ export default function Cta() {
                 Defenda o que é seu com quem entende do assunto.
               </p>
               <div>
-                <Link
+                <a
+                  target="_blank"
+                  rel="noopener noreferrer"
                   className="btn rounded-lg font-bold text-xl text-white bg-green-700 hover:bg-green-800 w-full group gap-2 border border-green-500 max-w-lg"
-                  href="/request-demo"
+                  href="/https://wa.me/5514997785999?text=Ol%C3%A1%2C%0A%0Agostaria%20de%20agendar%20uma%20consulta.%0A%0AMeu%20caso%20%C3%A9%20sobre"
                 >
-                  <Image
-                    src="/images/whatsapp.svg"
-                    alt="WhatsApp"
-                    width={32}
-                    height={32}
-                  />
+                  <IconBrandWhatsapp size={32} stroke={1.5} />
                   Agendar uma consulta
-                </Link>
+                </a>
               </div>
             </div>
           </div>

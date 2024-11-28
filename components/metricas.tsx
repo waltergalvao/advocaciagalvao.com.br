@@ -1,7 +1,7 @@
 import Image from "next/image";
 import TargetImage from "@/public/images/target.png";
 
-export default function Target() {
+export default function Metricas() {
   return (
     <section>
       <div className="max-w-6xl mx-auto px-4 sm:px-6">

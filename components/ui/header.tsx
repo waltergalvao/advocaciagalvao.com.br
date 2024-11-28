@@ -5,7 +5,7 @@ import MobileMenu from "./mobile-menu";
 export default function Header({ mode = "dark" }: { mode?: string }) {
   return (
     <header
-      className={`bg-slate-900 border-b border-slate-700 absolute w-full z-30 ${
+      className={`bg-slate-900 border-b border-slate-700 fixed w-full z-30 ${
         mode !== "light" && "dark"
       }`}
     >
@@ -22,18 +22,34 @@ export default function Header({ mode = "dark" }: { mode?: string }) {
             <ul className="flex grow justify-start flex-wrap items-center">
               <li>
                 <Link
-                  href="/about"
+                  href="/sobre"
                   className="font-medium text-slate-800 hover:text-slate-200 dark:text-slate-400 dark:hover:text-slate-200 px-3 lg:px-5 py-2 flex items-center transition duration-150 ease-in-out"
                 >
-                  O Escritório
+                  Sobre
                 </Link>
               </li>
               <li>
                 <Link
-                  href="/advogado-para-marketplace"
+                  href="/#marketplaces"
                   className="font-medium text-slate-800 hover:text-slate-200 dark:text-slate-400 dark:hover:text-slate-200 px-3 lg:px-5 py-2 flex items-center transition duration-150 ease-in-out"
                 >
                   Marketplace
+                </Link>
+              </li>
+              <li>
+                <Link
+                  href="/#areas-de-atuacao"
+                  className="font-medium text-slate-800 hover:text-slate-200 dark:text-slate-400 dark:hover:text-slate-200 px-3 lg:px-5 py-2 flex items-center transition duration-150 ease-in-out"
+                >
+                  Áreas de Atuação
+                </Link>
+              </li>
+              <li>
+                <Link
+                  href="/#faq"
+                  className="font-medium text-slate-800 hover:text-slate-200 dark:text-slate-400 dark:hover:text-slate-200 px-3 lg:px-5 py-2 flex items-center transition duration-150 ease-in-out"
+                >
+                  Perguntas Frequentes
                 </Link>
               </li>
             </ul>

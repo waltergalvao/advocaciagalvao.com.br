@@ -4,19 +4,21 @@ export const metadata = {
 };
 
 import Hero from "@/components/hero-home";
-import FeaturesBlocks from "@/components/features-blocks";
-import Features03 from "@/components/features-home-03";
-import Target from "@/components/target";
+import Qualidades from "@/components/qualidades";
+import AreasDeAtuacao from "@/components/areas-de-atuacao";
+import Metricas from "@/components/metricas";
 import Cta from "@/components/cta";
 import Faqs from "@/components/faqs";
+import Marketplaces from "@/components/marketplaces";
 
 export default function Home() {
   return (
     <>
       <Hero />
-      <FeaturesBlocks />
-      <Features03 />
-      <Target />
+      <Marketplaces />
+      <AreasDeAtuacao />
+      <Qualidades />
+      <Metricas />
       <Faqs />
       <Cta />
     </>
