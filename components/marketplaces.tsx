@@ -11,7 +11,7 @@ const CtaButton = () => {
       target="_blank"
       rel="noopener noreferrer"
       className="btn-sm mt-6 w-auto rounded-lg text-white text-md bg-slate-800 hover:bg-green-600 hover:border-green-800 group gap-2"
-      href="/https://wa.me/5514997785999?text=Ol%C3%A1%2C%0A%0Agostaria%20de%20agendar%20uma%20consulta.%0A%0AMeu%20caso%20%C3%A9%20sobre%20marketplace"
+      href="https://wa.me/5514997785999?text=Ol%C3%A1%2C%0A%0Agostaria%20de%20agendar%20uma%20consulta.%0A%0AMeu%20caso%20%C3%A9%20sobre%20marketplace"
     >
       Agendar consulta
     </a>
