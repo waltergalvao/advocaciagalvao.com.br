@@ -29,8 +29,7 @@ export default function HeroHome() {
                 Assistência jurídica descomplicada
               </h1>
               <p className="text-xl text-slate-400 mb-8">
-                Consulte advogados especializados para resolver seus problemas
-                jurídicos sem sair de casa.
+                Resolva seus problemas jurídicos sem sair de casa.
               </p>
               <div className="max-w-xs mx-auto sm:max-w-none sm:flex sm:justify-center md:justify-start space-y-4 sm:space-y-0 sm:space-x-4">
                 <div>
