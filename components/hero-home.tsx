@@ -1,5 +1,5 @@
 import Link from "next/link";
-import VideoThumb from "@/public/images/hero-image-01.jpg";
+import VideoThumb from "@/public/images/video-thumb.jpg";
 import ModalVideo01 from "@/components/modal-video-01";
 import Image from "next/image";
 import { IconBrandWhatsapp } from "@tabler/icons-react";
@@ -51,12 +51,9 @@ export default function HeroHome() {
             {/* Hero image */}
             <ModalVideo01
               thumb={VideoThumb}
-              thumbWidth={540}
-              thumbHeight={405}
+              thumbWidth={648}
+              thumbHeight={486}
               thumbAlt="Modal video thumbnail"
-              video="/videos/video.mp4"
-              videoWidth={1920}
-              videoHeight={1080}
             />
           </div>
         </div>

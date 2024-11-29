@@ -9,15 +9,13 @@ import {
   TransitionChild,
 } from "@headlessui/react";
 import Image from "next/image";
+import { IconPlayerPlayFilled } from "@tabler/icons-react";
 
 interface ModalVideo01Props {
   thumb: StaticImageData;
   thumbWidth: number;
   thumbHeight: number;
   thumbAlt: string;
-  video: string;
-  videoWidth: number;
-  videoHeight: number;
 }
 
 export default function ModalVideo01({
@@ -25,9 +23,6 @@ export default function ModalVideo01({
   thumbWidth,
   thumbHeight,
   thumbAlt,
-  video,
-  videoWidth,
-  videoHeight,
 }: ModalVideo01Props) {
   const [modalOpen, setModalOpen] = useState<boolean>(false);
   const videoRef = useRef<HTMLVideoElement>(null);
@@ -49,28 +44,13 @@ export default function ModalVideo01({
           />
         </div>
         <button
-          className="absolute group"
+          className="absolute group rounded-full bg-red-500 animate-glow text-white p-4"
           onClick={() => {
             setModalOpen(true);
           }}
           aria-label="Watch the video"
         >
-          <svg
-            className="w-16 h-16 fill-current sm:w-20 sm:h-20 group"
-            viewBox="0 0 88 88"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <circle
-              className="text-white opacity-80 group-hover:opacity-100 transition duration-150 ease-in-out"
-              cx="44"
-              cy="44"
-              r="44"
-            />
-            <path
-              className="text-blue-600"
-              d="M52 44a.999.999 0 00-.427-.82l-10-7A1 1 0 0040 37V51a.999.999 0 001.573.82l10-7A.995.995 0 0052 44V44c0 .001 0 .001 0 0z"
-            />
-          </svg>
+          <IconPlayerPlayFilled size={32} stroke={1.5} />
         </button>
       </div>
       {/* End: Video thumbnail */}
@@ -107,17 +87,17 @@ export default function ModalVideo01({
             leaveTo="opacity-0 scale-95"
           >
             <div className="max-w-6xl mx-auto h-full flex items-center">
-              <DialogPanel className="w-full max-h-full aspect-video bg-black overflow-hidden">
-                <video
-                  ref={videoRef}
-                  width={videoWidth}
-                  height={videoHeight}
-                  loop
-                  controls
-                >
-                  <source src={video} type="video/mp4" />
-                  Your browser does not support the video tag.
-                </video>
+              <DialogPanel className="w-full max-h-full aspect-video bg-black overflow-hidden min-h-[80vh]">
+                <iframe
+                  height="100%"
+                  width="100%"
+                  src="https://www.youtube.com/embed/NpBdAWDp7MA?si=e2ux4dnNDl2okHqA&rel=0"
+                  title="YouTube video player"
+                  frameBorder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                  referrerPolicy="strict-origin-when-cross-origin"
+                  allowFullScreen
+                ></iframe>
               </DialogPanel>
             </div>
           </TransitionChild>

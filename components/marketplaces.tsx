@@ -37,10 +37,7 @@ export default function Marketplaces() {
 
           {/* Section content */}
           <div className="max-w-sm mx-auto md:max-w-none grid gap-12 md:grid-cols-2 md:gap-x-10 md:gap-y-10 items-start">
-            <div
-              data-aos="fade-up"
-              className="p-8 border border-slate-400 rounded-lg"
-            >
+            <div data-aos="fade-up" className="p-8 border border-slate-400">
               <div className="flex items-center gap-4 mb-4 text-slate-800">
                 <div className="p-2 rounded-xl bg-slate-200 text-slate-800">
                   <IconCurrencyDollarOff size={24} stroke={1.5} />
@@ -57,10 +54,7 @@ export default function Marketplaces() {
               <CtaButton />
             </div>
 
-            <div
-              data-aos="fade-up"
-              className="p-8 border border-slate-400 rounded-lg"
-            >
+            <div data-aos="fade-up" className="p-8 border border-slate-400">
               <div className="flex items-center gap-4 mb-4 text-slate-800">
                 <div className="p-2 rounded-xl bg-slate-200 text-slate-800">
                   <IconGavel size={24} stroke={1.5} />
@@ -76,10 +70,7 @@ export default function Marketplaces() {
               <CtaButton />
             </div>
 
-            <div
-              data-aos="fade-up"
-              className="p-8 border border-slate-400 rounded-lg"
-            >
+            <div data-aos="fade-up" className="p-8 border border-slate-400">
               <div className="flex items-center gap-4 mb-4 text-slate-800">
                 <div className="p-2 rounded-xl bg-slate-200 text-slate-800">
                   <IconMessageCircleX size={24} stroke={1.5} />
@@ -94,10 +85,7 @@ export default function Marketplaces() {
               <CtaButton />
             </div>
 
-            <div
-              data-aos="fade-up"
-              className="p-8 border border-slate-400 rounded-lg"
-            >
+            <div data-aos="fade-up" className="p-8 border border-slate-400">
               <div className="flex items-center gap-4 mb-4 text-slate-800">
                 <div className="p-2 rounded-xl bg-slate-200 text-slate-800">
                   <IconBrain size={24} stroke={1.5} />
