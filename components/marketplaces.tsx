@@ -15,7 +15,7 @@ const CtaButton = () => {
       data-umami-event="agendar_consulta"
       data-umami-event-type="marketplaces"
     >
-      Agendar consulta
+      Falar com advogado
     </a>
   );
 };

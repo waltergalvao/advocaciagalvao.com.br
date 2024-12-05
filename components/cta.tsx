@@ -35,7 +35,7 @@ export default function Cta() {
                   data-umami-event-type="cta"
                 >
                   <IconBrandWhatsapp size={32} stroke={1.5} />
-                  Agendar uma consulta
+                  Falar com advogado
                 </a>
               </div>
             </div>

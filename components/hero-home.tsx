@@ -42,7 +42,7 @@ export default function HeroHome() {
                     href="https://wa.me/5514997785999?text=Ol%C3%A1%2C%0A%0Agostaria%20de%20agendar%20uma%20consulta.%0A%0AMeu%20caso%20%C3%A9%20sobre"
                   >
                     <IconBrandWhatsapp size={32} stroke={1.5} />
-                    Agendar uma consulta
+                    Falar com advogado
                   </a>
                 </div>
               </div>
