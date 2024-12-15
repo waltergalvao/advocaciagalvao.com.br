@@ -4,13 +4,14 @@ import {
   IconGavel,
   IconMessageCircleX,
 } from "@tabler/icons-react";
+import Image from "next/image";
 
 const CtaButton = () => {
   return (
     <a
       target="_blank"
       rel="noopener noreferrer"
-      className="btn-sm mt-6 w-auto rounded-lg text-white text-md bg-slate-800 hover:bg-green-600 hover:border-green-800 group gap-2"
+      className="btn-sm mt-6 w-auto rounded-lg text-white text-md bg-green-500 hover:bg-green-600 border-green-800 group gap-2"
       href="https://wa.me/5514997785999?text=Ol%C3%A1%2C%0A%0Agostaria%20de%20agendar%20uma%20consulta.%0A%0AMeu%20caso%20%C3%A9%20sobre%20marketplace"
       data-umami-event="agendar_consulta"
       data-umami-event-type="marketplaces"
@@ -26,13 +27,42 @@ export default function Marketplaces() {
       <div className="max-w-6xl mx-auto px-4 sm:px-6">
         <div className="py-12 md:pt-20 md:pb-20">
           {/* Section header */}
-          <div className="max-w-3xl mx-auto text-center pb-12">
-            <h2 className="h2 font-playfair-display text-slate-800 mb-3">
-              Marketplaces & E-commerce
+          <div className="max-w-3xl mx-auto text-center pb-2">
+            <h2 className="h2 font-playfair-display text-slate-800">
+              Marketplaces
             </h2>
-            <p className="text-xl text-slate-500">
-              Serviços para lojistas e vendedores de marketplaces.
+            <p className="text-xl text-slate-500 mt-2">
+              Somos especialistas em resolver problemas com marketplaces.
             </p>
+          </div>
+
+          <div className="flex justify-center pb-12 gap-8 flex-wrap">
+            <img
+              src="/images/logo-amazon.svg"
+              className="h-[48px] mt-8"
+              alt="Amazon"
+              title="Amazon"
+            />
+            <Image
+              src="/images/logo-mercadolivre.svg"
+              height={80}
+              width={80}
+              alt="Mercado Livre"
+              title="Mercado Livre"
+            />
+            <Image
+              src="/images/logo-mercadopago.svg"
+              height={72}
+              width={72}
+              alt="Mercado Pago"
+              title="Mercado Pago"
+            />
+            <img
+              src="/images/logo-shopee.svg"
+              className="h-[48px] mt-4"
+              alt="Shopee"
+              title="Shopee"
+            />
           </div>
 
           {/* Section content */}
@@ -80,7 +110,7 @@ export default function Marketplaces() {
               </div>
               <p className="text-lg text-slate-500">
                 Auxiliamos na intermediação de disputas que causam prejuízos ou
-                causam o sucesso de um golpe contra o vendedor.
+                o sucesso de um golpista contra o seu negócio.
               </p>
               <CtaButton />
             </div>
