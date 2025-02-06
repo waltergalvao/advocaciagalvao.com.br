@@ -59,7 +59,7 @@ export default function Header({ mode = "dark" }: { mode?: string }) {
                 >
                   Parceiros
                 </Link>
-              </li>/*
+              </li>*/
               <li>
                 <Link
                   href="/#faq"
