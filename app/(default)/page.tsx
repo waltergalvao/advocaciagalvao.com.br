@@ -1,6 +1,5 @@
 export const metadata = {
   title: "Galvão Advocacia",
-  description: "Page description",
 };
 
 import Hero from "@/components/hero-home";

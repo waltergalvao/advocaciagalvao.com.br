@@ -14,7 +14,7 @@ export default function HeroHome() {
       ></div>
 
       <div className="relative max-w-6xl mx-auto px-4 sm:px-6">
-        <div className="pt-32 pb-20 md:pt-40 md:pb-44">
+        <div className="pt-16 pb-20 md:pt-24 md:pb-44">
           {/* Hero content */}
           <div className="max-w-xl mx-auto md:max-w-none md:flex md:items-center md:space-x-8 lg:space-x-16 xl:space-x-20 space-y-16 md:space-y-0">
             {/* Content */}
@@ -42,7 +42,7 @@ export default function HeroHome() {
                     href="https://wa.me/5514997785999?text=Ol%C3%A1%2C%0A%0Agostaria%20de%20agendar%20uma%20consulta.%0A%0AMeu%20caso%20%C3%A9%20sobre"
                   >
                     <IconBrandWhatsapp size={32} stroke={1.5} />
-                    Falar com advogado
+                    Primeiro contato sem custo
                   </a>
                 </div>
               </div>

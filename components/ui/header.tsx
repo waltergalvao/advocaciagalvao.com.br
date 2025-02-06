@@ -46,6 +46,22 @@ export default function Header({ mode = "dark" }: { mode?: string }) {
               </li>
               <li>
                 <Link
+                  href="/mensalista"
+                  className="font-medium text-slate-800 hover:text-slate-200 dark:text-slate-400 dark:hover:text-slate-200 px-3 lg:px-5 py-2 flex items-center transition duration-150 ease-in-out"
+                >
+                  Mensalistas
+                </Link>
+              </li>
+              {/* <li>
+                <Link
+                  href="/parceiros"
+                  className="font-medium text-slate-800 hover:text-slate-200 dark:text-slate-400 dark:hover:text-slate-200 px-3 lg:px-5 py-2 flex items-center transition duration-150 ease-in-out"
+                >
+                  Parceiros
+                </Link>
+              </li> */}
+              <li>
+                <Link
                   href="/#faq"
                   className="font-medium text-slate-800 hover:text-slate-200 dark:text-slate-400 dark:hover:text-slate-200 px-3 lg:px-5 py-2 flex items-center transition duration-150 ease-in-out"
                 >

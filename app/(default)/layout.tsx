@@ -35,7 +35,7 @@ export default function DefaultLayout({
           })(window, document, "clarity", "script", "p90yafzx5k");
         `}
       </Script>
-      <main className="grow">{children}</main>
+      <main className="grow mt-[64px] md:mt-[80px]">{children}</main>
 
       <Footer />
     </div>
