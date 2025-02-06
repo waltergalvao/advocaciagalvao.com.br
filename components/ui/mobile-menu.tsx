@@ -10,7 +10,7 @@ export default function MobileMenu() {
   const trigger = useRef<HTMLButtonElement>(null);
   const mobileNav = useRef<HTMLDivElement>(null);
 
-  // close the mobile menu on click outside
+  // Fecha o menu móvel ao clicar fora dele
   useEffect(() => {
     const clickHandler = ({ target }: { target: EventTarget | null }): void => {
       if (!mobileNav.current || !trigger.current) return;
@@ -26,7 +26,7 @@ export default function MobileMenu() {
     return () => document.removeEventListener("click", clickHandler);
   });
 
-  // close the mobile menu if the esc key is pressed
+  // Fecha o menu móvel se a tecla ESC for pressionada
   useEffect(() => {
     const keyHandler = ({ keyCode }: { keyCode: number }): void => {
       if (!mobileNavOpen || keyCode !== 27) return;
@@ -38,7 +38,7 @@ export default function MobileMenu() {
 
   return (
     <div className="flex md:hidden">
-      {/* Hamburger button */}
+      {/* Botão de hambúrguer */}
       <button
         ref={trigger}
         className={`hamburger ${mobileNavOpen && "active"}`}
@@ -58,7 +58,7 @@ export default function MobileMenu() {
         </svg>
       </button>
 
-      {/*Mobile navigation */}
+      {/* Navegação móvel */}
       <div ref={mobileNav}>
         <Transition
           show={mobileNavOpen}
@@ -98,6 +98,24 @@ export default function MobileMenu() {
                 onClick={() => setMobileNavOpen(false)}
               >
                 Áreas de Atuação
+              </Link>
+            </li>
+            <li>
+              <Link
+                href="/mensalista"
+                className="flex font-medium text-slate-800 hover:text-blue-600 py-2"
+                onClick={() => setMobileNavOpen(false)}
+              >
+                Mensalistas
+              </Link>
+            </li>
+            <li>
+              <Link
+                href="/parceiros"
+                className="flex font-medium text-slate-800 hover:text-blue-600 py-2"
+                onClick={() => setMobileNavOpen(false)}
+              >
+                Parceiros
               </Link>
             </li>
             <li>
