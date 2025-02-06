@@ -1,3 +1,7 @@
+export const metadata = {
+  title: "Galvão Advocacia",
+};
+
 export default function Parceiros() {
   return (
     <section className="mt-12">
