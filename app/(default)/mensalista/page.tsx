@@ -1,6 +1,7 @@
 export const metadata = {
   title: "Galvão Advocacia",
 };
+import { IconBrandWhatsapp } from "@tabler/icons-react";
 
 export default function Mensalistas() {
   return (
@@ -18,8 +19,8 @@ export default function Mensalistas() {
                 suspensões de contas, disputas com clientes e exigências legais. Nossa
                 proposta é oferecer um suporte jurídico contínuo para proteger seu
                 negócio e garantir que você tenha mais tempo para focar no crescimento das
-                suas vendas. Os três primeiros meses não possuem taxa de cancelamento para
-                que você tenha total segurança e confiança no nosso trabalho.
+                suas vendas. <strong>Os três primeiros meses não possuem taxa de cancelamento para
+                que você tenha total segurança e confiança no nosso trabalho.</strong>
               </p>
 
               <h3 className="h4 font-playfair-display text-slate-800 mb-4">
@@ -91,8 +92,15 @@ export default function Mensalistas() {
                 Entre em contato agora mesmo para uma análise inicial gratuita e descubra como nossos planos podem ajudar sua empresa a crescer com segurança.
               </p>
 
-              <p className="mb-8"><strong>Fale Conosco</strong></p>
-              <p className="mb-8">Advocacia Galvão – Proteção Jurídica para Seu E-commerce</p>
+              <a
+                href="https://wa.me/5514997785999?text=Ol%C3%A1%2C%0A%0Atenho%20interesse%20nos%20planos%20mensais%20de%20suporte%20jur%C3%ADdico.%0A%0APode%20me%20passar%20mais%20informa%C3%A7%C3%B5es%3F"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center px-6 py-3 text-white font-semibold bg-green-500 rounded-lg shadow-md hover:bg-green-600 transition duration-300"
+              >
+                <IconBrandWhatsapp className="w-6 h-6 mr-2" />
+                Primeiro contato sem custo
+              </a>
             </div>
           </div>
         </div>
