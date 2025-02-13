@@ -26,13 +26,17 @@ export default function RootLayout({
 }: {
   children: React.ReactNode;
 }) {
+  const analyticsId = process.env.NEXT_PUBLIC_ANALYTICS_ID;
+
   return (
     <html lang="en">
-      <Script
-        async
-        src="https://cloud.umami.is/script.js"
-        data-website-id="8548493a-8c8e-4285-b4d6-46575be3e2f0"
-      />
+      {analyticsId && (
+        <Script
+          async
+          src="https://cloud.umami.is/script.js"
+          data-website-id={analyticsId}
+        />
+      )}
       <body
         className={`${inter.variable} ${playfair.variable} font-inter antialiased bg-white text-slate-800 tracking-tight`}
       >
