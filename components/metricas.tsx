@@ -12,7 +12,7 @@ export default function Metricas() {
               Você estará em boas mãos
             </h2>
             <p className="text-xl text-slate-500">
-              Com anos de experiência e diversos casos decididos em nome de
+              Com anos de experiência e diversos casos decididos a favor de
               nossos clientes, somos referência em nossa área.
             </p>
           </div>
