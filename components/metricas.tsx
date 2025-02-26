@@ -1,5 +1,6 @@
 import Image from "next/image";
 import TargetImage from "@/public/images/target.png";
+import Link from "next/link";
 
 export default function Metricas() {
   return (
@@ -79,6 +80,30 @@ export default function Metricas() {
               />
             </div>
           </div>
+
+          <Link href="/cases/mercado-livre-golpe-e-indenizacao" target="_blank">
+            <div className="max-w-4xl mx-auto mt-16 text-lg">
+              <div className="flex flex-wrap md:flex-nowrap bg-slate-100 border border-emerald-500 group cursor-pointer transition-shadow duration-300">
+                <div className="w-full md:w-auto px-4 bg-emerald-200 text-emerald-800 h4 font-playfair-display whitespace-nowrap flex items-center justify-center py-2">
+                  Case de sucesso
+                </div>
+                <div className="px-6 py-8 flex-wrap bg-white group-hover:bg-emerald-50 text-slate-800 font-medium">
+                  <p>
+                    Veja como recuperamos{" "}
+                    <span className="text-emerald-600 font-bold">
+                      500 mil reais
+                    </span>{" "}
+                    em um golpe sofrido por cliente e vencemos indenização de
+                    mais de{" "}
+                    <span className="text-emerald-600 font-bold">
+                      40 mil reais
+                    </span>{" "}
+                    contra o MercadoLivre.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </Link>
         </div>
       </div>
     </section>
