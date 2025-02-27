@@ -16,7 +16,7 @@ export async function createContactEntry(formData: FormData) {
 
   await resend.emails.send({
     from: "Galvão Advocacia <contato@advocaciagalvao.com.br>",
-    to: "vitorgalvao20@gmail.com",
+    to: "vitorgalvaoadv@gmail.com",
     bcc: "walterbgneto@gmail.com",
     replyTo: email as string,
     subject: "Contato de Parceria",
