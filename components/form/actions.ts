@@ -1,5 +1,7 @@
 "use server";
 
+import { Resend } from "resend";
+
 export async function createContactEntry(formData: FormData) {
   const name = formData.get("name");
   const role = formData.get("role");
@@ -10,11 +12,21 @@ export async function createContactEntry(formData: FormData) {
   const partnership = formData.get("partnership");
   const details = formData.get("details");
 
-  console.log("name is", name);
-  console.log("role is", role);
-  console.log("state is", state);
-  console.log("city is", city);
-  console.log("email is", email);
-  console.log("phone is", phone);
-  console.log("partnership is", partnership);
+  const resend = new Resend(process.env.RESEND_API_KEY);
+
+  await resend.emails.send({
+    from: "Galvão Advocacia <contato@advocaciagalvao.com.br>",
+    to: "vitorgalvao20@gmail.com",
+    bcc: "walterbgneto@gmail.com",
+    replyTo: email as string,
+    subject: "Contato de Parceria",
+    html: `<p>Nome: ${name}</p>
+    <p>Cargo: ${role}</p>
+    <p>Estado: ${state}</p>
+    <p>Cidade: ${city}</p>
+    <p>Email: ${email}</p>
+    <p>Telefone: ${phone}</p>
+    <p>Parceiro: ${partnership}</p>
+    <p>Detalhes: ${details}</p>`,
+  });
 }
