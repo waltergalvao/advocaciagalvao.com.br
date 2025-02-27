@@ -109,7 +109,7 @@ export default function MobileMenu() {
                 Mensalistas
               </Link>
             </li>
-            {/* <li>
+            <li>
               <Link
                 href="/parceiros"
                 className="flex font-medium text-slate-800 hover:text-blue-600 py-2"
@@ -117,7 +117,7 @@ export default function MobileMenu() {
               >
                 Parceiros
               </Link>
-            </li> */}
+            </li>
             <li>
               <Link
                 href="/#faq"
