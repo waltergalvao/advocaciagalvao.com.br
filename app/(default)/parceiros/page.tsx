@@ -105,7 +105,7 @@ export default function Parceiros() {
                 Entre em Contato e Seja Nosso Parceiro
               </h3>
               <p className="mb-8">
-                a Preencha o formulário abaixo e envie sua proposta. Estamos
+                Preencha o formulário abaixo e envie sua proposta. Estamos
                 ansiosos para conhecer você!
               </p>
 
