@@ -59,11 +59,12 @@ export default function HeroShopee() {
                     aria-hidden="true"
                   ></div>
                   <Image
-                    src="/images/person.jpg"
+                    src="/images/shopee.jpg"
                     alt="Pessoa preocupada"
                     className="rounded-lg shadow-lg"
-                    width={500}
-                    height={500}
+                    width={768}
+                    height={768}
+                    quality={100}
                   />
                 </div>
               </div>

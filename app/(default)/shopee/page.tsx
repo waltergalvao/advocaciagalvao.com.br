@@ -23,12 +23,12 @@ export default function ShopeePage() {
       {/* Section 3 */}
       <div className="mt-32 max-w-6xl mx-4 md:mx-auto border-4 border-dashed border-slate-600 p-12 rounded-lg shadow-lg text-center">
         <h2 className="text-4xl font-playfair-display font-extrabold text-slate-800 mb-4">
-          Existe possibilidade de reverter o bloqueio?
+          Conta bloqueada na Shopee? Saiba como reverter!
         </h2>
         <p className="text-xl text-slate-800">
-          Cada caso deve ser analisado individualmente. Se o bloqueio for
-          indevido ou irregular, é possível adotar medidas legais para buscar a
-          solução adequada.
+          Se sua conta foi suspensa ou seu saldo ficou retido sem motivo claro,
+          existe solução! Com análise especializada, podemos recorrer e adotar
+          medidas legais para desbloquear sua conta e recuperar seu prejuízo.
         </p>
         <CtaButton />
       </div>
