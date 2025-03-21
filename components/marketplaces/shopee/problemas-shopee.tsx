@@ -33,10 +33,7 @@ export default function AreasDeAtuacao() {
                 </div>
               </div>
               <h3 className="h4 font-playfair-display mb-2">
-                <span className="text-slate-800">
-                  Teve a conta suspensa ou valores retidos e precisa entender
-                  seus direitos
-                </span>
+                <span className="text-slate-800">Teve a conta suspensa?</span>
               </h3>
               <p className="text-lg text-slate-500">
                 Um bloqueio repentino pode impactar sua operação. Nossa equipe
@@ -65,17 +62,13 @@ export default function AreasDeAtuacao() {
               </div>
               <h3 className="h4 font-playfair-display mb-2">
                 <span className="text-slate-800">
-                  Teve alteração de serviço que te prejudicou ou problema com
-                  cliente que comprou e teve mediação favorável
+                  Não sabe por que sua conta foi bloqueada?
                 </span>
               </h3>
               <p className="text-lg text-slate-500">
-                Muitas alterações de contrato por parte da Shopee podem ser
-                ilegais, ainda mais nos casos que não são aplicados para todos
-                ou causam prejuízo direto. Além disso, muitos bloqueios ocorrem
-                sem explicação clara, dificultando a defesa dos lojistas. Com
-                orientação jurídica, é possível avaliar os motivos e adotar as
-                medidas cabíveis para evitar e/ou ressarcir o problema.
+                Muitos bloqueios ocorrem sem explicação clara, dificultando a
+                defesa dos lojistas. Com orientação jurídica, é possível avaliar
+                os motivos e adotar as medidas cabíveis.
               </p>
               <CtaButton />
             </article>
@@ -99,12 +92,12 @@ export default function AreasDeAtuacao() {
               </div>
               <h3 className="h4 font-playfair-display mb-2">
                 <span className="text-slate-800">
-                  Já tentou contato com a Shopee e não obteve resposta
+                  Já tentou contato com a Shopee e não obteve resposta?
                 </span>
               </h3>
               <p className="text-lg text-slate-500">
                 Caso seus pedidos de revisão não tenham sido atendidos, existe a
-                possibilidade de recorrer por vias legais de forma ágil para
+                possibilidade de recorrer por vias legais de forma rápida para
                 buscar a reativação da conta.
               </p>
               <CtaButton />

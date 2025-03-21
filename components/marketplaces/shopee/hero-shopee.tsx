@@ -23,8 +23,8 @@ export default function HeroShopee() {
               data-aos="fade-right"
             >
               <h1 className="h1 text-5xl font-playfair-display text-slate-100 mb-4">
-                Sua conta na Shopee foi suspensa? Saldo retido ou prejuízo com
-                mediação e alteração de serviço?
+                Sua conta na Shopee foi suspensa, bloqueada, banida ou teve
+                valor retido na conta?
               </h1>
               <p className="text-xl text-slate-400 mb-8">
                 Nosso escritório jurídico presta assessoria para lojistas que

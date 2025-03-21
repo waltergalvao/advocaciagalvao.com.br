@@ -104,7 +104,8 @@ export default function ShopeePage() {
                 A orientação de um advogado pode ser fundamental para esclarecer
                 dúvidas e identificar as melhores alternativas disponíveis,
                 traçando estratégias de como coletar a prova digital e como
-                evitar os argumentos mais utilizados pelas plataformas.
+                evitar os argumentos mais utilizados pelas plataformas já
+                fazendo prova específica.
               </Accordion>
               <span
                 className="block border-t border-gray-200"
