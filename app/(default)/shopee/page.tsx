@@ -21,7 +21,7 @@ export default function ShopeePage() {
       <ProblemasShopee />
 
       {/* Section 3 */}
-      <div className="mt-32 max-w-6xl  mx-auto border-4 border-dashed border-slate-600 p-12 rounded-lg shadow-lg text-center">
+      <div className="mt-32 max-w-6xl mx-4 md:mx-auto border-4 border-dashed border-slate-600 p-12 rounded-lg shadow-lg text-center">
         <h2 className="text-4xl font-playfair-display font-extrabold text-slate-800 mb-4">
           Existe possibilidade de reverter o bloqueio?
         </h2>
@@ -34,7 +34,7 @@ export default function ShopeePage() {
       </div>
 
       {/* Section 4 */}
-      <div className="mt-32 max-w-6xl  mx-auto flex flex-col md:flex-row items-center md:space-x-8">
+      <div className="mt-32 max-w-6xl mx-4 md:mx-auto flex flex-col md:flex-row items-center md:space-x-8">
         <div className="w-full md:w-1/2">
           <Image
             src={IntroImage}
@@ -47,7 +47,7 @@ export default function ShopeePage() {
           />
         </div>
         <div className="w-full md:w-1/2 mt-8 md:mt-0">
-          <h2 className="text-3xl font-bold text-slate-800 mb-4">
+          <h2 className="text-3xl font-bold font-playfair-display text-slate-800 mb-4">
             Quem somos?
           </h2>
           <p className="text-lg text-slate-500">
