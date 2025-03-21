@@ -1,9 +1,10 @@
 import VideoThumb from "@/public/images/video-thumb.jpg";
 import ModalVideo01 from "@/components/modal-video-01";
-import { IconBrandWhatsapp, IconStarFilled } from "@tabler/icons-react";
-import { Avaliacoes } from "./avaliacoes";
+import { IconBrandWhatsapp } from "@tabler/icons-react";
+import { Avaliacoes } from "@/components/avaliacoes";
+import Image from "next/image";
 
-export default function HeroHome() {
+export default function HeroShopee() {
   return (
     <section className="relative">
       {/* Dark background */}
@@ -21,14 +22,15 @@ export default function HeroHome() {
               className="text-center md:text-left md:min-w-[30rem]"
               data-aos="fade-right"
             >
-              <h1 className="text-slate-400 mb-2 text-2xl font-inter uppercase font-extralight">
-                Advocacia Galvão
-              </h1>
               <h1 className="h1 text-5xl font-playfair-display text-slate-100 mb-4">
-                Assistência jurídica descomplicada
+                Sua conta na Shopee foi suspensa? Saldo retido ou prejuízo com
+                mediação e alteração de serviço?
               </h1>
               <p className="text-xl text-slate-400 mb-8">
-                Resolva seus problemas jurídicos sem sair de casa.
+                Nosso escritório jurídico presta assessoria para lojistas que
+                enfrentam esse tipo de problema. Atuamos na defesa dos seus
+                direitos e na busca por soluções jurídicas adequadas para cada
+                caso.
               </p>
               <div className="max-w-xs mx-auto sm:max-w-none sm:flex sm:justify-center md:justify-start space-y-4 sm:space-y-0 sm:space-x-4">
                 <div>
@@ -48,13 +50,24 @@ export default function HeroHome() {
               <Avaliacoes />
             </div>
 
-            {/* Hero image */}
-            <ModalVideo01
-              thumb={VideoThumb}
-              thumbWidth={648}
-              thumbHeight={486}
-              thumbAlt="Modal video thumbnail"
-            />
+            <div className="shrink-0" data-aos="fade-left">
+              {/* Video thumbnail */}
+              <div className="flex justify-center items-center">
+                <div className="relative cursor-pointer">
+                  <div
+                    className="absolute inset-0 pointer-events-none border-2 border-slate-700 mt-3 ml-3 translate-x-4 translate-y-4 -z-10"
+                    aria-hidden="true"
+                  ></div>
+                  <Image
+                    src="/images/person.jpg"
+                    alt="Pessoa preocupada"
+                    className="rounded-lg shadow-lg"
+                    width={500}
+                    height={500}
+                  />
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
