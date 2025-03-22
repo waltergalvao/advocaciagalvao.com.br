@@ -15,6 +15,8 @@ import { Quote } from "@/components/quote";
 
 export const metadata = {
   title: "Shopee | Galvão Advocacia",
+  description:
+    "Conta bloqueada na Shopee? Saiba como reverter! Com análise especializada, podemos recorrer e adotar medidas legais para desbloquear sua conta e recuperar seu prejuízo.",
 };
 
 export default function ShopeePage() {
