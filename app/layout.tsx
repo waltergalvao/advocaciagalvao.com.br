@@ -1,5 +1,6 @@
 import Script from "next/script";
 import "./css/style.css";
+import { GoogleTagManager } from "@next/third-parties/google";
 
 import { Inter, Playfair_Display } from "next/font/google";
 import Image from "next/image";
@@ -21,17 +22,10 @@ export default function RootLayout({
 }: {
   children: React.ReactNode;
 }) {
-  const analyticsId = process.env.NEXT_PUBLIC_ANALYTICS_ID;
-
   return (
     <html lang="en">
-      {analyticsId && (
-        <Script
-          async
-          src="https://cloud.umami.is/script.js"
-          data-website-id={analyticsId}
-        />
-      )}
+      <GoogleTagManager gtmId="G-RX6F4WF534" />
+
       <body
         className={`${inter.variable} ${playfair.variable} font-inter antialiased bg-white text-slate-800 tracking-tight`}
       >
