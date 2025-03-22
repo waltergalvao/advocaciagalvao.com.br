@@ -6,6 +6,12 @@ import HeroShopee from "@/components/marketplaces/shopee/hero-shopee";
 import ProblemasShopee from "@/components/marketplaces/shopee/problemas-shopee";
 import { CtaButton } from "@/components/cta-button";
 import { Avaliacoes } from "@/components/avaliacoes";
+import Qualidades from "@/components/qualidades";
+import Quote1 from "@/components/assets/quote-1.png";
+import Quote2 from "@/components/assets/quote2.jpeg";
+import Quote3 from "@/components/assets/quote-3.png";
+import Quote4 from "@/components/assets/quote-4.png";
+import { Quote } from "@/components/quote";
 
 export const metadata = {
   title: "Shopee | Galvão Advocacia",
@@ -22,8 +28,9 @@ export default function ShopeePage() {
 
       {/* Section 3 */}
       <div className="mt-32 max-w-6xl mx-4 md:mx-auto border-4 border-dashed border-slate-600 p-12 rounded-lg shadow-lg text-center">
-        <h2 className="text-4xl font-playfair-display font-extrabold text-slate-800 mb-4">
-          Conta bloqueada na Shopee? Saiba como reverter!
+        <h2 className="h2 font-playfair-display font-extrabold text-slate-800 mb-4">
+          Conta bloqueada na Shopee? <br />
+          Saiba como reverter!
         </h2>
         <p className="text-xl text-slate-800">
           Se sua conta foi suspensa ou seu saldo ficou retido sem motivo claro,
@@ -33,40 +40,98 @@ export default function ShopeePage() {
         <CtaButton />
       </div>
 
-      {/* Section 4 */}
-      <div className="mt-32 max-w-6xl mx-4 md:mx-auto flex flex-col md:flex-row items-center md:space-x-8">
-        <div className="w-full md:w-1/2">
-          <Image
-            src={IntroImage}
-            alt="Vitor Galvão"
-            className="w-full h-auto rounded-2xl border-8 border-slate-500"
-            width={1024}
-            height={576}
-            priority
-            quality={100}
-          />
-        </div>
-        <div className="w-full md:w-1/2 mt-8 md:mt-0">
-          <h2 className="text-3xl font-bold font-playfair-display text-slate-800 mb-4">
-            Quem somos?
+      <section className="mt-32 px-4 md:px-0">
+        <div className="max-w-3xl mx-auto text-center">
+          <h2 className="h2 font-playfair-display text-slate-800 mb-3">
+            Outros já passaram por isso
           </h2>
-          <p className="text-lg text-slate-500">
-            Nosso escritório é especializado em Direito Digital e Defesa de
-            Lojistas da Shopee, atuando em casos de contas suspensas ou
-            bloqueadas em marketplaces há mais de oito anos. Trabalhamos com
-            transparência e buscamos soluções seguras dentro da legalidade para
-            cada cliente.
+          <p className="text-xl text-slate-500">
+            Veja depoimentos de clientes que confiaram em nossos serviços.
           </p>
-          <p className="text-lg text-slate-500 mt-4">
-            Nosso compromisso é oferecer assessoria jurídica qualificada,
-            proporcionando suporte técnico e esclarecendo dúvidas sobre o tema.
-          </p>
-          <Avaliacoes variant="light" />
+        </div>
+
+        <div className="mt-12 flex flex-col gap-4">
+          <Quote
+            imageSrc={Quote1}
+            name="Beatriz Torres"
+            role="Microempreendedora"
+          >
+            &ldquo;Minha conta na Shopee foi suspensa sem explicação, e meu
+            saldo ficou preso. Fiquei desesperada, pois era minha principal
+            fonte de renda. Com ajuda jurídica, consegui reverter a suspensão e
+            recuperar meus valores. Voltei a vender normalmente e com conta como
+            Vendedor Indicado!&rdquo;
+          </Quote>
+          <Quote imageSrc={Quote4} name="Priscila Silva" role="Artesã">
+            &ldquo;Vendo produtos personalizados e, do nada, minha conta foi
+            bloqueada e os pagamentos congelados. Depois do contato com o Dr.
+            Vitor, finalmente recuperei minha conta e meus ganhos. Foi um alívio
+            enorme poder continuar meu trabalho!&rdquo;
+          </Quote>
+          <Quote
+            imageSrc={Quote3}
+            name="Everton Morelli"
+            role="Grande Loja Multiuso"
+          >
+            &ldquo;A Shopee bloqueou minha conta alegando violação de
+            propriedade intelectual, mas eu não tinha feito nada errado. Entrei
+            com notificação extrajudicial e minha conta foi restaurada. Agora,
+            redobro os cuidados para evitar novos bloqueios.&rdquo;
+          </Quote>
+          <Quote
+            imageSrc={Quote2}
+            name="Caio Trindade"
+            role="Loja de Eletrônicos"
+          >
+            &ldquo;Minha conta foi banida sem motivo claro. Com orientação
+            especializada do Dr. Vitor, consegui liberar minha conta e cobrar
+            lucros cessantes com dano moral. Hoje, continuo vendendo e sempre
+            salvo a nota da loja e número de pedidos para evitar problemas no
+            futuro.&rdquo;
+          </Quote>
+        </div>
+      </section>
+
+      {/* Section 4 */}
+
+      <div className="mt-32 mb-16 max-w-6xl mx-4 md:mx-auto">
+        <h2 className="h2 text-center font-bold font-playfair-display text-slate-800 mb-4">
+          Quem somos?
+        </h2>
+        <div className="mt-12 flex flex-col md:flex-row items-center md:space-x-8">
+          <div className="w-full md:w-1/2">
+            <Image
+              src={IntroImage}
+              alt="Vitor Galvão"
+              className="w-full h-auto rounded-2xl border-8 border-slate-500"
+              width={1024}
+              height={576}
+              priority
+              quality={100}
+            />
+          </div>
+          <div className="w-full md:w-1/2 mt-8 md:mt-0">
+            <p className="text-lg text-slate-500">
+              Nosso escritório é especializado em Direito Digital e Defesa de
+              Lojistas da Shopee, atuando em casos de contas suspensas ou
+              bloqueadas em marketplaces há mais de oito anos. Trabalhamos com
+              transparência e buscamos soluções seguras dentro da legalidade
+              para cada cliente.
+            </p>
+            <p className="text-lg text-slate-500 mt-4">
+              Nosso compromisso é oferecer assessoria jurídica qualificada,
+              proporcionando suporte técnico e esclarecendo dúvidas sobre o
+              tema.
+            </p>
+            <Avaliacoes variant="light" />
+          </div>
         </div>
       </div>
 
+      <Qualidades />
+
       {/* Section 5 */}
-      <section className="bg-slate-50 mt-32" id="faq">
+      <section className="bg-slate-50 mt-16" id="faq">
         <div className="max-w-6xl mx-auto px-4 sm:px-6">
           <div className="py-12 md:py-20 border-t border-slate-50">
             {/* Section header */}

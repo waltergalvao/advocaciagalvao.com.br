@@ -61,7 +61,7 @@ export default function HeroShopee() {
                   <Image
                     src="/images/shopee.jpg"
                     alt="Pessoa preocupada"
-                    className="rounded-lg shadow-lg"
+                    className="shadow-lg"
                     width={768}
                     height={768}
                     quality={100}

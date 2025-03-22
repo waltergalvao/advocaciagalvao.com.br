@@ -1,7 +1,7 @@
 import Image from "next/image";
-import MktplaceImg from "@/public/images/mktplace.jpg";
-import DireitoCivilImg from "@/public/images/direito-civil.jpg";
-import DireitoConsumidorImg from "@/public/images/direito-consumidor.jpg";
+import ShopeePhoneImg from "@/public/images/shopee-phone.png";
+import MulherConfusaImg from "@/public/images/mulher-confusa.jpg";
+import ContatoSadImg from "@/public/images/contato-sad.jpg";
 import { CtaButton } from "@/components/cta-button";
 export default function AreasDeAtuacao() {
   return (
@@ -25,15 +25,18 @@ export default function AreasDeAtuacao() {
                 <div className="overflow-hidden">
                   <Image
                     className="w-full aspect-square object-cover group-hover:scale-105 transition duration-700 ease-out"
-                    src={MktplaceImg}
-                    width={342}
-                    height={342}
+                    src={ShopeePhoneImg}
+                    width={800}
+                    height={500}
+                    quality={100}
                     alt="Direito Digital"
                   />
                 </div>
               </div>
               <h3 className="h4 font-playfair-display mb-2">
-                <span className="text-slate-800">Teve a conta suspensa?</span>
+                <span className="text-slate-800">
+                  Teve a conta suspensa ou bloqueada?
+                </span>
               </h3>
               <p className="text-lg text-slate-500">
                 Um bloqueio repentino pode impactar sua operação. Nossa equipe
@@ -53,9 +56,10 @@ export default function AreasDeAtuacao() {
                 <div className="overflow-hidden">
                   <Image
                     className="w-full aspect-square object-cover group-hover:scale-105 transition duration-700 ease-out"
-                    src={DireitoCivilImg}
-                    width={342}
-                    height={342}
+                    src={MulherConfusaImg}
+                    width={1248}
+                    height={832}
+                    quality={100}
                     alt="Direito Civil"
                   />
                 </div>
@@ -83,9 +87,9 @@ export default function AreasDeAtuacao() {
                 <div className="overflow-hidden">
                   <Image
                     className="w-full aspect-square object-cover group-hover:scale-105 transition duration-700 ease-out"
-                    src={DireitoConsumidorImg}
-                    width={342}
-                    height={342}
+                    src={ContatoSadImg}
+                    width={640}
+                    height={427}
                     alt="Direito do Consumidor"
                   />
                 </div>

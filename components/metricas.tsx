@@ -6,7 +6,7 @@ export default function Metricas() {
   return (
     <section>
       <div className="max-w-6xl mx-auto px-4 sm:px-6">
-        <div className="py-12 md:py-20 border-t border-slate-200">
+        <div className="py-12 md:py-20 ">
           {/* Section header */}
           <div className="max-w-3xl mx-auto text-center pb-12 md:pb-20">
             <h2 className="h2 font-playfair-display text-slate-800 mb-3">

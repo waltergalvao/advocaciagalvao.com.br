@@ -2,7 +2,7 @@ export default function Qualidades() {
   return (
     <section>
       <div className="max-w-6xl mx-auto px-4 sm:px-6">
-        <div className="py-12 md:py-20 border-t border-slate-200">
+        <div className="py-12 md:py-20 border-t border-slate-200 border-b">
           {/* Items */}
           <div
             className="relative max-w-sm mx-auto grid gap-16 md:grid-cols-2 lg:grid-cols-3 lg:gap-y-20 items-start md:max-w-2xl lg:max-w-none"
