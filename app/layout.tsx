@@ -1,6 +1,6 @@
 import Script from "next/script";
 import "./css/style.css";
-import { GoogleTagManager } from "@next/third-parties/google";
+import { GoogleTagManager, GoogleAnalytics } from "@next/third-parties/google";
 
 import { Inter, Playfair_Display } from "next/font/google";
 import Image from "next/image";
@@ -24,7 +24,8 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <GoogleTagManager gtmId="G-RX6F4WF534" />
+      <GoogleTagManager gtmId="GTM-T5HHG9LN" />
+      <GoogleAnalytics gaId="G-RX6F4WF534" />
 
       <body
         className={`${inter.variable} ${playfair.variable} font-inter antialiased bg-white text-slate-800 tracking-tight`}
