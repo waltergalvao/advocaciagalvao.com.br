@@ -1,4 +1,3 @@
-import Script from "next/script";
 import "./css/style.css";
 import { GoogleTagManager, GoogleAnalytics } from "@next/third-parties/google";
 

@@ -25,7 +25,6 @@ export default function DefaultLayout({
 
   return (
     <div className="flex flex-col min-h-screen overflow-hidden">
-      <Header />
       <Script id="microsoft-clarity" strategy="afterInteractive">
         {`
           (function(c,l,a,r,i,t,y){
@@ -35,8 +34,8 @@ export default function DefaultLayout({
           })(window, document, "clarity", "script", "p90yafzx5k");
         `}
       </Script>
+      <Header showNav={false} />
       <main className="grow mt-[64px] md:mt-[80px]">{children}</main>
-
       <Footer />
     </div>
   );
