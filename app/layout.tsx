@@ -24,7 +24,6 @@ export default function RootLayout({
   return (
     <html lang="en">
       <GoogleTagManager gtmId="GTM-T5HHG9LN" />
-      <GoogleAnalytics gaId="G-RX6F4WF534" />
 
       <body
         className={`${inter.variable} ${playfair.variable} font-inter antialiased bg-white text-slate-800 tracking-tight`}
