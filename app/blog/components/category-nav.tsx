@@ -1,6 +1,6 @@
 "use client";
 
-import { IconBoxMultiple } from "@tabler/icons-react";
+import { IconBoxMultiple, IconProps } from "@tabler/icons-react";
 import Link from "next/link";
 import React from "react";
 import { categoriesInfo, Category } from "../lib/categories";
@@ -44,10 +44,7 @@ export const CategoryNav = ({
 
 interface CategoryNavItemProps extends React.HTMLAttributes<HTMLDivElement> {
   active: boolean;
-  icon: React.ComponentType<{
-    stroke: number;
-    size: number;
-  }>;
+  icon: React.ComponentType<IconProps>;
   category: string;
 }
 
