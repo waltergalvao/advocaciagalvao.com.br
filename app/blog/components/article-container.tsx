@@ -20,9 +20,7 @@ export function ArticleContainer({
       <Header />
       <div className="h-full w-full">
         <div className="relative flex h-full flex-col">
-          <main className="mt-8 mb-16 flex-auto prose max-w-none">
-            {children}
-          </main>
+          <main className="mt-8 mb-16 flex-auto max-w-none">{children}</main>
           <Footer />
         </div>
       </div>
