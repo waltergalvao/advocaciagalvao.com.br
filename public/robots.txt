@@ -1,0 +1,9 @@
+# *
+User-agent: *
+Allow: /
+
+# Host
+Host: https://advocaciagalvao.com.br
+
+# Sitemaps
+Sitemap: https://advocaciagalvao.com.br/sitemap.xml
