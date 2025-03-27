@@ -1,14 +1,12 @@
 import typographyPlugin from "@tailwindcss/typography";
-import formPlugin from "@tailwindcss/forms";
 import typographyStyles from "./typography";
 
 /** @type {import('tailwindcss').Config} */
 export default {
   content: [
-    "./app/**/*.{js,ts,jsx,tsx}",
-    "./pages/**/*.{js,ts,jsx,tsx}",
-    "./components/**/*.{js,ts,jsx,tsx}",
-    "./typography.ts",
+    "./app/**/*.{js,ts,jsx,tsx,mdx}",
+    "./pages/**/*.{js,ts,jsx,tsx,mdx}",
+    "./components/**/*.{js,ts,jsx,tsx,mdx}",
   ],
   darkMode: "class",
   theme: {
@@ -58,5 +56,9 @@ export default {
       },
     },
   },
-  plugins: [typographyPlugin, formPlugin],
+  plugins: [
+    typographyPlugin,
+    require("@tailwindcss/forms"),
+    require("tailwindcss-animate"),
+  ],
 };
