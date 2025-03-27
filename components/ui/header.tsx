@@ -19,7 +19,16 @@ export default function Header({
         <div className="flex items-center justify-between h-16 md:h-20">
           {/* Site branding */}
           <div className="shrink-0 mr-4">
-            <Logo />
+            {showNav && (
+              <Link
+                href="/"
+                className="block text-blue-600 transition duration-150 ease-in-out"
+                aria-label="Galvao Advocacia"
+              >
+                <Logo />
+              </Link>
+            )}
+            {!showNav && <Logo />}
           </div>
 
           {/* Desktop navigation */}
