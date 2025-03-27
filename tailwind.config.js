@@ -1,5 +1,9 @@
+import typographyPlugin from "@tailwindcss/typography";
+import formPlugin from "@tailwindcss/forms";
+import typographyStyles from "./typography";
+
 /** @type {import('tailwindcss').Config} */
-module.exports = {
+export default {
   content: [
     "./app/**/*.{js,ts,jsx,tsx}",
     "./pages/**/*.{js,ts,jsx,tsx}",
@@ -14,6 +18,7 @@ module.exports = {
           "50%": { boxShadow: "0 0 20px 5px red" },
         },
       },
+      typography: typographyStyles,
       animation: {
         glow: "glow 2s infinite", // Animation duration and loop
       },
@@ -52,5 +57,5 @@ module.exports = {
       },
     },
   },
-  plugins: [require("@tailwindcss/forms"), require("@tailwindcss/typography")],
+  plugins: [typographyPlugin, formPlugin],
 };

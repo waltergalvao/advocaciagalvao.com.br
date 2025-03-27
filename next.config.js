@@ -1,10 +1,20 @@
-const withMDX = require("@next/mdx")();
+import nextMDX from "@next/mdx";
+
+import { recmaPlugins } from "./app/blog/mdx/recma.js";
+import { rehypePlugins } from "./app/blog/mdx/rehype.js";
+import { remarkPlugins } from "./app/blog/mdx/remark.js";
+
+const withMDX = nextMDX({
+  options: {
+    remarkPlugins,
+    rehypePlugins,
+    recmaPlugins,
+  },
+});
 
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  // Configure `pageExtensions` to include MDX files
-  pageExtensions: ["js", "jsx", "mdx", "ts", "tsx"],
-  // Optionally, add any other Next.js config below
+  pageExtensions: ["js", "jsx", "ts", "tsx", "mdx"],
 };
 
-module.exports = withMDX(nextConfig);
+export default withMDX(nextConfig);
