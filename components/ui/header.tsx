@@ -85,6 +85,14 @@ export default function Header({
                       Perguntas Frequentes
                     </Link>
                   </li>
+                  <li>
+                    <Link
+                      href="/blog"
+                      className="font-medium text-slate-800 hover:text-slate-200 dark:text-slate-400 dark:hover:text-slate-200 px-3 lg:px-5 py-2 flex items-center transition duration-150 ease-in-out"
+                    >
+                      Blog
+                    </Link>
+                  </li>
                 </ul>
               </nav>
               <MobileMenu />
