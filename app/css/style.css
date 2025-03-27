@@ -16,11 +16,11 @@
   }
 }
 
-
+@layer base {
   /**
    * Shiki 
    */
-   pre.shiki {
+  pre.shiki {
     counter-reset: line-number;
   }
 
