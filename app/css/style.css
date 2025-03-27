@@ -15,3 +15,45 @@
     direction: rtl;
   }
 }
+
+
+  /**
+   * Shiki 
+   */
+   pre.shiki {
+    counter-reset: line-number;
+  }
+
+  pre.shiki code {
+    display: grid;
+  }
+
+  html pre.shiki,
+  html pre.shiki span {
+    color: var(--shiki-dark) !important;
+  }
+
+  pre.shiki .line {
+    counter-increment: line-number;
+  }
+
+  pre.shiki .line:not(:last-of-type)::before {
+    content: counter(line-number);
+    color: hsl(240 5.3% 26.1%);
+    display: inline-block;
+    text-align: right;
+    margin-right: 1em;
+    width: 2ch;
+  }
+
+  html pre.shiki .line:not(:last-of-type)::before {
+    color: hsl(240 5% 64.9%);
+  }
+
+  html pre.shiki .diff.add {
+    background-color: hsla(143.8 61.2% 20.2% / 0.7);
+  }
+  html pre.shiki .diff.remove {
+    background-color: hsla(0 62.8% 30.6% / 0.7);
+  }
+}
