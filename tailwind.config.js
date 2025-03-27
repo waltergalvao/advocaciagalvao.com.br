@@ -8,6 +8,7 @@ export default {
     "./app/**/*.{js,ts,jsx,tsx}",
     "./pages/**/*.{js,ts,jsx,tsx}",
     "./components/**/*.{js,ts,jsx,tsx}",
+    "./typography.ts",
   ],
   darkMode: "class",
   theme: {
