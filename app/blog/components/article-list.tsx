@@ -34,7 +34,7 @@ export async function ArticleList(
                 <div className="relative w-full">
                   <Image
                     src={article.image}
-                    className="rounded w-full max-h-[300px] object-cover"
+                    className="rounded w-full md:max-h-[300px] object-cover"
                     alt="Blog post image"
                     quality={100}
                     width={512}
