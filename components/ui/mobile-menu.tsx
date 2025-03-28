@@ -127,6 +127,15 @@ export default function MobileMenu() {
                 Perguntas Frequentes
               </Link>
             </li>
+            <li>
+              <Link
+                href="/blog"
+                className="flex font-medium text-slate-800 hover:text-blue-600 py-2"
+                onClick={() => setMobileNavOpen(false)}
+              >
+                Blog
+              </Link>
+            </li>
           </ul>
         </Transition>
       </div>
