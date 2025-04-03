@@ -61,7 +61,7 @@ export default function MercadoLivrePage() {
             role="Microempreendedor"
           >
             &ldquo;Minha conta no Mercado Livre foi suspensa sem explicação, e meu
-            saldo ficou preso. Fiquei desesperada, pois era minha principal
+            saldo ficou preso. Fiquei desesperado, pois era minha principal
             fonte de renda. Com ajuda jurídica, consegui reverter a suspensão e
             recuperar meus valores. Voltei a vender normalmente e com conta como
             Vendedor Indicado!&rdquo;
