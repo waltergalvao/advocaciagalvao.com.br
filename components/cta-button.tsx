@@ -1,4 +1,8 @@
-export const CtaButton = () => {
+export const CtaButton = ({
+  label = "Falar com advogado",
+}: {
+  label?: string;
+}) => {
   return (
     <a
       target="_blank"
@@ -8,7 +12,7 @@ export const CtaButton = () => {
       data-umami-event="agendar_consulta"
       data-umami-event-type="marketplaces"
     >
-      Falar com advogado
+      {label}
     </a>
   );
 };

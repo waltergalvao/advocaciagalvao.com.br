@@ -23,14 +23,16 @@ export default function HeroAmazon() {
               data-aos="fade-right"
             >
               <h1 className="h1 text-5xl font-playfair-display text-slate-100 mb-4">
-                Sua conta na Amazon foi suspensa, bloqueada, banida ou teve
-                valor retido na conta?
+                Conta da Amazon bloqueada ou saldo retido?
+                <br />
+                <span className="text-3xl text-green-500">
+                  Recupere sua conta com atuação jurídica especializada.
+                </span>
               </h1>
               <p className="text-xl text-slate-400 mb-8">
-                Nosso escritório jurídico presta assessoria para lojistas que
-                enfrentam esse tipo de problema. Atuamos na defesa dos seus
-                direitos e na busca por soluções jurídicas adequadas para cada
-                caso.
+                Advogado especialista em direito digital e marketplaces. Atuação
+                rápida para vendedores prejudicados por bloqueios injustos ou
+                prejuízos por conta da plataforma.
               </p>
               <div className="max-w-xs mx-auto sm:max-w-none sm:flex sm:justify-center md:justify-start space-y-4 sm:space-y-0 sm:space-x-4">
                 <div>

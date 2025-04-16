@@ -12,8 +12,6 @@ import Quote10 from "@/components/assets/quote-10.png";
 import Quote11 from "@/components/assets/quote-11.png";
 import Quote12 from "@/components/assets/quote-12.png";
 import { Quote } from "@/components/quote";
-import Footer from "@/components/ui/footer";
-import Header from "@/components/ui/header";
 
 export const metadata = {
   title: "Amazon | Galvão Advocacia",
@@ -27,11 +25,8 @@ export default function AmazonPage() {
       {/* Section 1 */}
       <HeroAmazon />
 
-      {/* Section 2 */}
-      <ProblemasAmazon />
-
       {/* Section 3 */}
-      <div className="mt-32 max-w-6xl mx-4 md:mx-auto border-4 border-dashed border-slate-600 p-12 rounded-lg shadow-lg text-center">
+      <div className="mt-8 max-w-6xl mx-4 md:mx-auto border-4 border-dashed border-slate-600 p-12 rounded-lg shadow-lg text-center">
         <h2 className="h2 font-playfair-display font-extrabold text-slate-800 mb-4">
           Conta bloqueada na Amazon? <br />
           Saiba como reverter!
@@ -41,8 +36,11 @@ export default function AmazonPage() {
           existe solução! Com análise especializada, podemos recorrer e adotar
           medidas legais para desbloquear sua conta e recuperar seu prejuízo.
         </p>
-        <CtaButton />
+        <CtaButton label="Quero minha conta de volta agora" />
       </div>
+
+      {/* Section 2 */}
+      <ProblemasAmazon />
 
       <section className="mt-32 px-4 md:px-0">
         <div className="max-w-3xl mx-auto text-center">

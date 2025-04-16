@@ -6,7 +6,7 @@ export default function AreasDeAtuacao() {
   return (
     <section className="relative">
       <div
-        className="relative max-w-6xl mx-auto px-4 sm:px-6"
+        className="relative max-w-6xl mx-auto px-4 sm:px-6 mt-32"
         id="areas-de-atuacao"
       >
         <div className="mt-12">
@@ -22,14 +22,14 @@ export default function AreasDeAtuacao() {
                   aria-hidden="true"
                 ></div>
                 <div className="overflow-hidden">
-                <Image
+                  <Image
                     className="w-full aspect-square object-cover group-hover:scale-105 transition duration-700 ease-out"
                     src="/images/amazon-phone.png"
                     alt="Amazon Phone"
                     width={800}
                     height={500}
                     quality={100}
-                />
+                  />
                 </div>
               </div>
               <h3 className="h4 font-playfair-display mb-2">
