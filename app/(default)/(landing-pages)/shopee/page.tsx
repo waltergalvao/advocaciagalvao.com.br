@@ -27,11 +27,8 @@ export default function ShopeePage() {
       {/* Section 1 */}
       <HeroShopee />
 
-      {/* Section 2 */}
-      <ProblemasShopee />
-
       {/* Section 3 */}
-      <div className="mt-32 max-w-6xl mx-4 md:mx-auto border-4 border-dashed border-slate-600 p-12 rounded-lg shadow-lg text-center">
+      <div className="mt-8 max-w-6xl mx-4 md:mx-auto border-4 border-dashed border-slate-600 p-12 rounded-lg shadow-lg text-center">
         <h2 className="h2 font-playfair-display font-extrabold text-slate-800 mb-4">
           Conta bloqueada na Shopee? <br />
           Saiba como reverter!
@@ -43,6 +40,9 @@ export default function ShopeePage() {
         </p>
         <CtaButton />
       </div>
+
+      {/* Section 2 */}
+      <ProblemasShopee />
 
       <section className="mt-32 px-4 md:px-0">
         <div className="max-w-3xl mx-auto text-center">

@@ -7,10 +7,10 @@ export default function AreasDeAtuacao() {
   return (
     <section className="relative">
       <div
-        className="relative max-w-6xl mx-auto px-4 sm:px-6"
+        className="relative max-w-6xl mx-auto px-4 sm:px-6 mt-32"
         id="areas-de-atuacao"
       >
-        <div className="mt-12">
+        <div>
           {/* Section header */}
 
           {/* Section content */}

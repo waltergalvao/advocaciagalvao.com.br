@@ -9,7 +9,7 @@ export default function AreasDeAtuacao() {
         className="relative max-w-6xl mx-auto px-4 sm:px-6 mt-32"
         id="areas-de-atuacao"
       >
-        <div className="mt-12">
+        <div>
           {/* Section header */}
 
           {/* Section content */}
