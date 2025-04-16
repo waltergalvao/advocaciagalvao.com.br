@@ -27,24 +27,7 @@ export default function ShopeePage() {
       {/* Section 1 */}
       <HeroShopee />
 
-      {/* Section 3 */}
-      <div className="mt-8 max-w-6xl mx-4 md:mx-auto border-4 border-dashed border-slate-600 p-12 rounded-lg shadow-lg text-center">
-        <h2 className="h2 font-playfair-display font-extrabold text-slate-800 mb-4">
-          Conta bloqueada na Shopee? <br />
-          Saiba como reverter!
-        </h2>
-        <p className="text-xl text-slate-800">
-          Se sua conta foi suspensa ou seu saldo ficou retido sem motivo claro,
-          existe solução! Com análise especializada, podemos recorrer e adotar
-          medidas legais para desbloquear sua conta e recuperar seu prejuízo.
-        </p>
-        <CtaButton />
-      </div>
-
-      {/* Section 2 */}
-      <ProblemasShopee />
-
-      <section className="mt-32 px-4 md:px-0">
+      <section className="mt-8 px-4 md:px-0">
         <div className="max-w-3xl mx-auto text-center">
           <h2 className="h2 font-playfair-display text-slate-800 mb-3">
             Outros já passaram por isso
@@ -95,6 +78,23 @@ export default function ShopeePage() {
           </Quote>
         </div>
       </section>
+
+      {/* Section 2 */}
+      <ProblemasShopee />
+
+      {/* Section 3 */}
+      <div className="mt-32 max-w-6xl mx-4 md:mx-auto border-4 border-dashed border-slate-600 p-12 rounded-lg shadow-lg text-center">
+        <h2 className="h2 font-playfair-display font-extrabold text-slate-800 mb-4">
+          Conta bloqueada na Shopee? <br />
+          Saiba como reverter!
+        </h2>
+        <p className="text-xl text-slate-800">
+          Se sua conta foi suspensa ou seu saldo ficou retido sem motivo claro,
+          existe solução! Com análise especializada, podemos recorrer e adotar
+          medidas legais para desbloquear sua conta e recuperar seu prejuízo.
+        </p>
+        <CtaButton />
+      </div>
 
       {/* Section 4 */}
 
