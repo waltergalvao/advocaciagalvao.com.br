@@ -21,7 +21,7 @@ export default function HeroShopee() {
               data-aos="fade-right"
             >
               <h1 className="h1 text-5xl font-playfair-display text-slate-100 mb-4">
-                Conta da Shopee bloqueada ou saldo retido?
+                Conta de vendedor da Shopee bloqueada ou saldo retido?
                 <br />
                 <span className="text-3xl text-green-500">
                   Recupere sua conta com atuação jurídica especializada.
