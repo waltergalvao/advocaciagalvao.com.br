@@ -1,4 +1,4 @@
-import { IconBrandFacebook } from "@tabler/icons-react";
+import { IconBrandFacebook, IconPhone } from "@tabler/icons-react";
 import Link from "next/link";
 
 export default function Footer() {
@@ -9,7 +9,13 @@ export default function Footer() {
         <div className="md:flex md:justify-between py-6 md:py-8">
           {/* Copyrights note */}
           <div className="text-sm text-slate-400 mr-4 font-medium">
-            © Advocacia Galvão - OAB/SP 389789
+            <div>© Advocacia Galvão - OAB/SP 389789</div>
+            <div className="flex items-center gap-2 mt-2">
+              <IconPhone size={16} />
+              <a href="tel:+5514997785999" className="hover:underline">
+                +55 (14) 99778-5999
+              </a>
+            </div>
           </div>
 
           {/* Social links */}
