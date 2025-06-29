@@ -12,6 +12,7 @@ import Quote10 from "@/components/assets/quote-10.png";
 import Quote11 from "@/components/assets/quote-11.png";
 import Quote12 from "@/components/assets/quote-12.png";
 import { Quote } from "@/components/quote";
+import ButtonCta from "@/components/ui/button-cta";
 
 export const metadata = {
   title: "Amazon | Galvão Advocacia",
@@ -205,17 +206,7 @@ export default function AmazonPage() {
                   Defenda o que é seu com quem entende do assunto.
                 </p>
                 <div>
-                  <a
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="btn rounded-lg font-bold text-xl text-white bg-green-700 hover:bg-green-800 w-full group gap-2 border border-green-500 max-w-lg"
-                    href="https://wa.me/5514997785999?text=Ol%C3%A1%2C%0A%0Agostaria%20de%20agendar%20uma%20consulta.%0A%0AMeu%20caso%20%C3%A9%20sobre"
-                    data-umami-event="agendar_consulta"
-                    data-umami-event-type="cta"
-                  >
-                    <IconBrandWhatsapp size={32} stroke={1.5} />
-                    Primeiro contato sem custo
-                  </a>
+                  <ButtonCta />
                 </div>
               </div>
             </div>

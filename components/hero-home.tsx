@@ -2,6 +2,7 @@ import VideoThumb from "@/public/images/video-thumb.jpg";
 import ModalVideo01 from "@/components/modal-video-01";
 import { IconBrandWhatsapp, IconStarFilled } from "@tabler/icons-react";
 import { Avaliacoes } from "./avaliacoes";
+import ButtonCta from "./ui/button-cta";
 
 export default function HeroHome() {
   return (
@@ -32,17 +33,7 @@ export default function HeroHome() {
               </p>
               <div className="max-w-xs mx-auto sm:max-w-none sm:flex sm:justify-center md:justify-start space-y-4 sm:space-y-0 sm:space-x-4">
                 <div>
-                  <a
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    data-umami-event="agendar_consulta"
-                    data-umami-event-type="hero"
-                    className="btn rounded-lg font-bold text-xl text-white bg-green-700 hover:bg-green-800 w-full group gap-2 border border-green-500 max-w-lg"
-                    href="https://wa.me/5514997785999?text=Ol%C3%A1%2C%0A%0Agostaria%20de%20agendar%20uma%20consulta.%0A%0AMeu%20caso%20%C3%A9%20sobre"
-                  >
-                    <IconBrandWhatsapp size={32} stroke={1.5} />
-                    Primeiro contato sem custo
-                  </a>
+                  <ButtonCta />
                 </div>
               </div>
               <Avaliacoes />

@@ -1,6 +1,7 @@
 export const metadata = {
   title: "Galvão Advocacia",
 };
+import ButtonCta from "@/components/ui/button-cta";
 import { IconBrandWhatsapp } from "@tabler/icons-react";
 
 export default function Mensalistas() {
@@ -166,15 +167,7 @@ export default function Mensalistas() {
                 com segurança.
               </p>
 
-              <a
-                href="https://wa.me/5514997785999?text=Ol%C3%A1%2C%0A%0Atenho%20interesse%20nos%20planos%20mensais%20de%20suporte%20jur%C3%ADdico.%0A%0APode%20me%20passar%20mais%20informa%C3%A7%C3%B5es%3F"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="inline-flex items-center px-6 py-3 text-white font-semibold bg-green-500 rounded-lg shadow-md hover:bg-green-600 transition duration-300"
-              >
-                <IconBrandWhatsapp className="w-6 h-6 mr-2" />
-                Primeiro contato sem custo
-              </a>
+              <ButtonCta />
             </div>
           </div>
         </div>

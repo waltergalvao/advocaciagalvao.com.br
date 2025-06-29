@@ -14,6 +14,7 @@ import Quote8 from "@/components/assets/quote-8.png";
 import { Quote } from "@/components/quote";
 import Footer from "@/components/ui/footer";
 import Header from "@/components/ui/header";
+import ButtonCta from "@/components/ui/button-cta";
 
 export const metadata = {
   title: "Mercado Livre | Galvão Advocacia",
@@ -60,8 +61,8 @@ export default function MercadoLivrePage() {
             name="Murilo Dantas"
             role="Microempreendedor"
           >
-            &ldquo;Minha conta no Mercado Livre foi suspensa sem explicação, e meu
-            saldo ficou preso. Fiquei desesperado, pois era minha principal
+            &ldquo;Minha conta no Mercado Livre foi suspensa sem explicação, e
+            meu saldo ficou preso. Fiquei desesperado, pois era minha principal
             fonte de renda. Com ajuda jurídica, consegui reverter a suspensão e
             recuperar meus valores. Voltei a vender normalmente e com conta como
             Vendedor Indicado!&rdquo;
@@ -149,9 +150,9 @@ export default function MercadoLivrePage() {
             <ul className="max-w-3xl mx-auto divide-y divide-slate-200">
               <Accordion title="Por que minha conta foi bloqueada?">
                 Bloqueios podem ocorrer por diversas razões, incluindo supostas
-                violações de políticas do Mercado Livre, erros de análise automatizada
-                ou denúncias de terceiros. Caso o bloqueio seja indevido, há
-                formas legais de contestá-lo.
+                violações de políticas do Mercado Livre, erros de análise
+                automatizada ou denúncias de terceiros. Caso o bloqueio seja
+                indevido, há formas legais de contestá-lo.
               </Accordion>
 
               <Accordion title="Como funciona a assessoria jurídica nesse caso?">
@@ -207,17 +208,7 @@ export default function MercadoLivrePage() {
                   Defenda o que é seu com quem entende do assunto.
                 </p>
                 <div>
-                  <a
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="btn rounded-lg font-bold text-xl text-white bg-green-700 hover:bg-green-800 w-full group gap-2 border border-green-500 max-w-lg"
-                    href="https://wa.me/5514997785999?text=Ol%C3%A1%2C%0A%0Agostaria%20de%20agendar%20uma%20consulta.%0A%0AMeu%20caso%20%C3%A9%20sobre"
-                    data-umami-event="agendar_consulta"
-                    data-umami-event-type="cta"
-                  >
-                    <IconBrandWhatsapp size={32} stroke={1.5} />
-                    Primeiro contato sem custo
-                  </a>
+                  <ButtonCta />
                 </div>
               </div>
             </div>
