@@ -19,7 +19,7 @@ export default function Footer() {
           </div>
 
           {/* Social links */}
-          <ul className="flex space-x-6 mb-4 md:order-1 md:ml-4 md:mb-0">
+          <ul className="flex space-x-6 mb-4 md:order-1 md:ml-4 md:mb-0 mt-6 md:mt-0">
             <li>
               <a
                 className="text-slate-400 hover:text-slate-100 transition duration-150 ease-in-out"

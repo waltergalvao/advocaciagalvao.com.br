@@ -21,8 +21,8 @@ export default function HeroMercadoLivreV2() {
               data-aos="fade-right"
             >
               <h1 className="h1 text-5xl font-playfair-display text-slate-100 mb-4">
-                Sua loja na Shopee fatura mais de R$ 50 mil e foi suspensa,
-                banida ou teve valores retidos?
+                Sua loja no Mercado Livre fatura mais de R$ 50 mil e foi
+                suspensa, banida ou teve valores retidos?
                 <br />
                 <span className="text-3xl text-green-500">
                   Recupere sua conta com atuação jurídica especializada.
