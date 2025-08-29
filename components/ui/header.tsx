@@ -11,7 +11,7 @@ export default function Header({
 }) {
   return (
     <header
-      className={`bg-slate-900 border-b border-slate-700 fixed w-full z-30 ${
+      className={`border-b bg-white/80 backdrop-blur-md py-2 md:py-1 border-slate-200 fixed w-full z-30 ${
         mode !== "light" && "dark"
       }`}
     >
@@ -28,7 +28,14 @@ export default function Header({
                 <Logo />
               </Link>
             )}
-            {!showNav && <Logo />}
+            {!showNav && (
+              <div className="flex items-center gap-4">
+                <Logo />
+                <span className="font-bold font-playfair-display text-xl">
+                  Advocacia Galvão
+                </span>
+              </div>
+            )}
           </div>
 
           {/* Desktop navigation */}
@@ -40,7 +47,7 @@ export default function Header({
                   <li>
                     <Link
                       href="/sobre"
-                      className="font-medium text-slate-800 hover:text-slate-200 dark:text-slate-400 dark:hover:text-slate-200 px-3 lg:px-5 py-2 flex items-center transition duration-150 ease-in-out"
+                      className="font-bold text-slate-800 hover:text-slate-200 dark:text-slate-700 dark:hover:text-slate-500 px-3 lg:px-5 py-2 flex items-center transition duration-150 ease-in-out"
                     >
                       Sobre
                     </Link>
@@ -48,15 +55,15 @@ export default function Header({
                   <li>
                     <Link
                       href="/#marketplaces"
-                      className="font-medium text-slate-800 hover:text-slate-200 dark:text-slate-400 dark:hover:text-slate-200 px-3 lg:px-5 py-2 flex items-center transition duration-150 ease-in-out"
+                      className="font-bold text-slate-800 hover:text-slate-200 dark:text-slate-700 dark:hover:text-slate-500 px-3 lg:px-5 py-2 flex items-center transition duration-150 ease-in-out"
                     >
-                      Marketplace
+                      Marketplaces
                     </Link>
                   </li>
                   <li>
                     <Link
                       href="/#areas-de-atuacao"
-                      className="font-medium text-slate-800 hover:text-slate-200 dark:text-slate-400 dark:hover:text-slate-200 px-3 lg:px-5 py-2 flex items-center transition duration-150 ease-in-out"
+                      className="font-bold text-slate-800 hover:text-slate-200 dark:text-slate-700 dark:hover:text-slate-500 px-3 lg:px-5 py-2 flex items-center transition duration-150 ease-in-out"
                     >
                       Áreas de Atuação
                     </Link>
@@ -64,7 +71,7 @@ export default function Header({
                   <li>
                     <Link
                       href="/mensalista"
-                      className="font-medium text-slate-800 hover:text-slate-200 dark:text-slate-400 dark:hover:text-slate-200 px-3 lg:px-5 py-2 flex items-center transition duration-150 ease-in-out"
+                      className="font-bold text-slate-800 hover:text-slate-200 dark:text-slate-700 dark:hover:text-slate-500 px-3 lg:px-5 py-2 flex items-center transition duration-150 ease-in-out"
                     >
                       Mensalistas
                     </Link>
@@ -72,7 +79,7 @@ export default function Header({
                   <li>
                     <Link
                       href="/parceiros"
-                      className="font-medium text-slate-800 hover:text-slate-200 dark:text-slate-400 dark:hover:text-slate-200 px-3 lg:px-5 py-2 flex items-center transition duration-150 ease-in-out"
+                      className="font-bold text-slate-800 hover:text-slate-200 dark:text-slate-700 dark:hover:text-slate-500 px-3 lg:px-5 py-2 flex items-center transition duration-150 ease-in-out"
                     >
                       Parceiros
                     </Link>
@@ -80,7 +87,7 @@ export default function Header({
                   <li>
                     <Link
                       href="/#faq"
-                      className="font-medium text-slate-800 hover:text-slate-200 dark:text-slate-400 dark:hover:text-slate-200 px-3 lg:px-5 py-2 flex items-center transition duration-150 ease-in-out"
+                      className="font-bold text-slate-800 hover:text-slate-200 dark:text-slate-700 dark:hover:text-slate-500 px-3 lg:px-5 py-2 flex items-center transition duration-150 ease-in-out"
                     >
                       Perguntas Frequentes
                     </Link>
@@ -88,7 +95,7 @@ export default function Header({
                   <li>
                     <Link
                       href="/blog"
-                      className="font-medium text-slate-800 hover:text-slate-200 dark:text-slate-400 dark:hover:text-slate-200 px-3 lg:px-5 py-2 flex items-center transition duration-150 ease-in-out"
+                      className="font-bold text-slate-800 hover:text-slate-200 dark:text-slate-700 dark:hover:text-slate-500 px-3 lg:px-5 py-2 flex items-center transition duration-150 ease-in-out"
                     >
                       Blog
                     </Link>

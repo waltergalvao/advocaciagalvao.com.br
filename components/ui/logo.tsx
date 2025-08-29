@@ -1,7 +1,6 @@
-import Link from "next/link";
-import LogoImg from "./logo-galvao.png";
+import LogoImg from "./logo-v2.png";
 import Image from "next/image";
 
 export default function Logo() {
-  return <Image src={LogoImg} alt="Galvao Advocacia" height={60} width={60} />;
+  return <Image src={LogoImg} alt="Galvão Advocacia" height={80} width={80} />;
 }
