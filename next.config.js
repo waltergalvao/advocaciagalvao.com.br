@@ -15,6 +15,16 @@ const withMDX = nextMDX({
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   pageExtensions: ["js", "jsx", "ts", "tsx", "mdx"],
+  redirects: async () => {
+    return [
+      {
+        source: "/alugar-casa",
+        destination:
+          "https://www.facebook.com/marketplace/item/869664289086839/",
+        permanent: true,
+      },
+    ];
+  },
 };
 
 export default withMDX(nextConfig);
