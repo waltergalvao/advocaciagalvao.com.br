@@ -22,28 +22,28 @@ export const Avaliacoes = ({ variant = "dark" }: AvaliacoesProps) => {
           src={Avatar1}
           width={40}
           height={40}
-          className="border-2 border-slate-700 group-hover:border-amber-500 rounded-full"
+          className="w-10 h-10 border-2 border-slate-700 group-hover:border-amber-500 rounded-full"
           alt="Google Review Avatar"
         />
         <Image
           src={Avatar2}
           width={40}
           height={40}
-          className="absolute left-[30px] border-2 border-slate-700 group-hover:border-amber-500 rounded-full"
+          className="w-10 h-10 absolute left-[30px] border-2 border-slate-700 group-hover:border-amber-500 rounded-full"
           alt="Google Review Avatar"
         />
         <Image
           src={Avatar3}
           width={40}
           height={40}
-          className="absolute left-[60px] border-2 border-slate-700 group-hover:border-amber-500 rounded-full"
+          className="w-10 h-10 absolute left-[60px] border-2 border-slate-700 group-hover:border-amber-500 rounded-full"
           alt="Google Review Avatar"
         />
         <Image
           src={Avatar4}
           width={40}
           height={40}
-          className="absolute left-[90px] border-2 border-slate-700 group-hover:border-amber-500 rounded-full"
+          className="w-10 h-10 absolute left-[90px] border-2 border-slate-700 group-hover:border-amber-500 rounded-full"
           alt="Google Review Avatar"
         />
       </div>

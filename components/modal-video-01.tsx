@@ -28,7 +28,7 @@ export default function ModalVideo01({
   const videoRef = useRef<HTMLVideoElement>(null);
 
   return (
-    <div className="shrink-0" data-aos="fade-left">
+    <div className="shrink-0">
       {/* Video thumbnail */}
       <div className="flex justify-center items-center">
         <div className="relative cursor-pointer">
