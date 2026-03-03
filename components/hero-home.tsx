@@ -22,9 +22,9 @@ export default function HeroHome() {
               className="text-center md:text-left md:min-w-[30rem]"
               data-aos="fade-right"
             >
-              <h1 className="text-slate-400 mb-2 text-2xl font-inter uppercase font-extralight">
+              <p className="text-slate-400 mb-2 text-2xl font-inter uppercase font-extralight">
                 Advocacia Galvão
-              </h1>
+              </p>
               <h1 className="h1 text-5xl font-playfair-display text-slate-100 mb-4">
                 Assistência jurídica descomplicada
               </h1>

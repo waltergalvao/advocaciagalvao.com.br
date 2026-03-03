@@ -57,7 +57,7 @@ export const Avaliacoes = ({ variant = "dark" }: AvaliacoesProps) => {
               className="text-amber-500"
             />
           ))}
-          <h3 className="text-amber-500 text-2xl font-bold">5.0</h3>
+          <span className="text-amber-500 text-2xl font-bold">5.0</span>
         </div>
         <span
           className={`text-${

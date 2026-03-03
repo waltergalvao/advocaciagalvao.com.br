@@ -23,9 +23,11 @@ export default function Marketplaces() {
           </div>
 
           <div className="flex justify-center pb-12 gap-8 flex-wrap">
-            <img
+            <Image
               src="/images/logo-amazon.svg"
-              className="h-[48px] mt-8"
+              width={120}
+              height={48}
+              className="h-[48px] w-auto mt-8"
               alt="Amazon"
               title="Amazon"
             />
@@ -43,9 +45,11 @@ export default function Marketplaces() {
               alt="Mercado Pago"
               title="Mercado Pago"
             />
-            <img
+            <Image
               src="/images/logo-shopee.svg"
-              className="h-[48px] mt-4"
+              width={120}
+              height={48}
+              className="h-[48px] w-auto mt-4"
               alt="Shopee"
               title="Shopee"
             />

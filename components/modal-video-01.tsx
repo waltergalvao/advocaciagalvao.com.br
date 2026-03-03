@@ -41,6 +41,7 @@ export default function ModalVideo01({
             width={thumbWidth}
             height={thumbHeight}
             alt={thumbAlt}
+            priority
             onClick={() => {
               setModalOpen(true);
             }}
@@ -96,7 +97,7 @@ export default function ModalVideo01({
                   width="100%"
                   src="https://www.youtube.com/embed/NpBdAWDp7MA?si=e2ux4dnNDl2okHqA&rel=0"
                   title="YouTube video player"
-                  frameBorder="0"
+                  className="border-0"
                   allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                   referrerPolicy="strict-origin-when-cross-origin"
                   allowFullScreen

@@ -4,6 +4,7 @@ import { ViewTransitions } from "next-view-transitions";
 
 import { Inter, Playfair_Display } from "next/font/google";
 import Image from "next/image";
+import type { Metadata } from "next";
 
 const inter = Inter({
   subsets: ["latin"],
@@ -17,6 +18,10 @@ const playfair = Playfair_Display({
   display: "swap",
 });
 
+export const metadata: Metadata = {
+  metadataBase: new URL("https://advocaciagalvao.com.br"),
+};
+
 export default function RootLayout({
   children,
 }: {
@@ -24,7 +29,7 @@ export default function RootLayout({
 }) {
   return (
     <ViewTransitions>
-      <html lang="en">
+      <html lang="pt-BR">
         <GoogleTagManager gtmId="GTM-T5HHG9LN" />
 
         <body

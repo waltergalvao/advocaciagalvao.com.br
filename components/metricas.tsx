@@ -90,12 +90,12 @@ export default function Metricas() {
                 <div className="px-6 py-8 flex-wrap bg-white group-hover:bg-emerald-50 text-slate-800 font-medium">
                   <p>
                     Veja como recuperamos{" "}
-                    <span className="text-emerald-600 font-bold">
+                    <span className="text-emerald-800 font-bold">
                       500 mil reais
                     </span>{" "}
                     em um golpe sofrido por cliente e vencemos indenização de
                     mais de{" "}
-                    <span className="text-emerald-600 font-bold">
+                    <span className="text-emerald-800 font-bold">
                       40 mil reais
                     </span>{" "}
                     contra o MercadoLivre.

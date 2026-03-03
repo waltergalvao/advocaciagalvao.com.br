@@ -34,12 +34,12 @@ export default function Footer() {
           </ul>
 
           <div>
-            <h5 className="text-slate-400 font-medium">Navegação</h5>
+            <h3 className="text-slate-400 font-medium text-base">Navegação</h3>
             <ul className="mt-2">
               <li>
                 <Link
                   href="/"
-                  className="mb-1 font-medium text-slate-500 hover:text-slate-200 dark:text-slate-400 dark:hover:text-slate-200 flex items-center transition duration-150 ease-in-out"
+                  className="mb-1 font-medium text-slate-300 hover:text-slate-100 flex items-center transition duration-150 ease-in-out"
                 >
                   Home
                 </Link>
@@ -47,7 +47,7 @@ export default function Footer() {
               <li>
                 <Link
                   href="/sobre"
-                  className="mb-1 font-medium text-slate-500 hover:text-slate-200 dark:text-slate-400 dark:hover:text-slate-200 flex items-center transition duration-150 ease-in-out"
+                  className="mb-1 font-medium text-slate-300 hover:text-slate-100 flex items-center transition duration-150 ease-in-out"
                 >
                   Sobre
                 </Link>
@@ -55,7 +55,7 @@ export default function Footer() {
               <li>
                 <Link
                   href="/mensalista"
-                  className="mb-1 font-medium text-slate-500 hover:text-slate-200 dark:text-slate-400 dark:hover:text-slate-200 flex items-center transition duration-150 ease-in-out"
+                  className="mb-1 font-medium text-slate-300 hover:text-slate-100 flex items-center transition duration-150 ease-in-out"
                 >
                   Mensalistas
                 </Link>
@@ -63,7 +63,7 @@ export default function Footer() {
               <li>
                 <Link
                   href="/parceiros"
-                  className="mb-1 font-medium text-slate-500 hover:text-slate-200 dark:text-slate-400 dark:hover:text-slate-200 flex items-center transition duration-150 ease-in-out"
+                  className="mb-1 font-medium text-slate-300 hover:text-slate-100 flex items-center transition duration-150 ease-in-out"
                 >
                   Parceiros
                 </Link>
@@ -71,7 +71,7 @@ export default function Footer() {
               <li>
                 <Link
                   href="/blog"
-                  className="mb-1 font-medium text-slate-500 hover:text-slate-200 dark:text-slate-400 dark:hover:text-slate-200 flex items-center transition duration-150 ease-in-out"
+                  className="mb-1 font-medium text-slate-300 hover:text-slate-100 flex items-center transition duration-150 ease-in-out"
                 >
                   Blog
                 </Link>
@@ -80,12 +80,12 @@ export default function Footer() {
           </div>
 
           <div>
-            <h5 className="text-slate-400 font-medium">Marketplaces</h5>
+            <h3 className="text-slate-400 font-medium text-base">Marketplaces</h3>
             <ul className="mt-2">
               <li>
                 <Link
                   href="/amazon"
-                  className="mb-1 font-medium text-slate-500 hover:text-slate-200 dark:text-slate-400 dark:hover:text-slate-200 flex items-center transition duration-150 ease-in-out"
+                  className="mb-1 font-medium text-slate-300 hover:text-slate-100 flex items-center transition duration-150 ease-in-out"
                 >
                   Amazon
                 </Link>
@@ -93,7 +93,7 @@ export default function Footer() {
               <li>
                 <Link
                   href="/mercadolivre"
-                  className="mb-1 font-medium text-slate-500 hover:text-slate-200 dark:text-slate-400 dark:hover:text-slate-200 flex items-center transition duration-150 ease-in-out"
+                  className="mb-1 font-medium text-slate-300 hover:text-slate-100 flex items-center transition duration-150 ease-in-out"
                 >
                   Mercado Livre
                 </Link>
@@ -101,7 +101,7 @@ export default function Footer() {
               <li>
                 <Link
                   href="/shopee"
-                  className="mb-1 font-medium text-slate-500 hover:text-slate-200 dark:text-slate-400 dark:hover:text-slate-200 flex items-center transition duration-150 ease-in-out"
+                  className="mb-1 font-medium text-slate-300 hover:text-slate-100 flex items-center transition duration-150 ease-in-out"
                 >
                   Shopee
                 </Link>
@@ -110,12 +110,12 @@ export default function Footer() {
           </div>
 
           <div>
-            <h5 className="text-slate-400 font-medium">Legal</h5>
+            <h3 className="text-slate-400 font-medium text-base">Legal</h3>
             <ul className="mt-2">
               <li>
                 <Link
                   href="/privacidade"
-                  className="mb-1 font-medium text-slate-500 hover:text-slate-200 dark:text-slate-400 dark:hover:text-slate-200 flex items-center transition duration-150 ease-in-out"
+                  className="mb-1 font-medium text-slate-300 hover:text-slate-100 flex items-center transition duration-150 ease-in-out"
                 >
                   Política de Privacidade
                 </Link>

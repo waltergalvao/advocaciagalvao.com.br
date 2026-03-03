@@ -18,13 +18,14 @@ export default function ButtonCta() {
         <IconBrandWhatsapp size={32} stroke={1.5} />
         Primeiro contato sem custo
       </a>
-      <a
+      <button
+        type="button"
         onClick={() => setModalOpen(true)}
         className="hidden md:inline-flex btn rounded-lg font-bold text-xl text-white bg-green-700 hover:bg-green-800 w-full group gap-2 border border-green-500 max-w-lg cursor-pointer"
       >
         <IconBrandWhatsapp size={32} stroke={1.5} />
         Primeiro contato sem custo
-      </a>
+      </button>
       <ModalContato isOpen={modalOpen} onClose={() => setModalOpen(false)} />
     </>
   );
