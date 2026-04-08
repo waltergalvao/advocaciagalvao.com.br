@@ -112,15 +112,8 @@ export default function Parceiros() {
               <ParceiroForm />
               <br />
               <p className="mb-8">
-                Se preferir, entre em contato diretamente pelo e-mail
-                <a
-                  href="mailto:parcerias@advocaciagalvao.com.br"
-                  className="text-blue-600"
-                >
-                  {" "}
-                  parcerias@advocaciagalvao.com.br{" "}
-                </a>
-                ou pelo nosso telefone. Estamos à disposição para conversar.
+                Se preferir, entre em contato diretamente pelo WhatsApp. Estamos
+                à disposição para conversar.
               </p>
             </div>
           </div>
