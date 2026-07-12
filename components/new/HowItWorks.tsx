@@ -72,7 +72,7 @@ export function HowItWorks() {
           >
             <a 
               href="/obrigado"
-              className="inline-flex items-center gap-2 bg-navy-900 hover:bg-navy-800 text-white font-bold px-10 py-4.5 rounded-sm shadow-xl hover:-translate-y-0.5 transition-all uppercase text-xs tracking-wider"
+              className="inline-flex items-center gap-2 bg-navy-900 hover:bg-navy-800 text-white font-bold px-10 py-5 rounded-sm shadow-xl hover:-translate-y-0.5 transition-all uppercase text-xs tracking-wider"
             >
               Iniciar análise agora
               <span className="text-gold-400">→</span>

@@ -131,7 +131,7 @@ export function PracticeAreas() {
           >
             <a
               href="/direito-digital/obrigado"
-              className="inline-flex items-center gap-2 bg-gold-500 md:hover:bg-gold-600 text-navy-900 font-bold px-10 py-4.5 rounded-sm shadow-xl shadow-gold-500/10 md:hover:-translate-y-0.5 transition-all uppercase text-xs tracking-wider"
+              className="inline-flex items-center gap-2 bg-gold-500 md:hover:bg-gold-600 text-navy-900 font-bold px-10 py-5 rounded-sm shadow-xl shadow-gold-500/10 md:hover:-translate-y-0.5 transition-all uppercase text-xs tracking-wider"
             >
               Iniciar análise agora
               <span>→</span>
