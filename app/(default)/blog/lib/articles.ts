@@ -1,5 +1,5 @@
 import { cache } from "react";
-import { blogParams } from "../../(api)/api/og/utils";
+import { blogParams } from "../../../(api)/api/og/utils";
 import glob from "fast-glob";
 
 export interface Article {
@@ -46,7 +46,7 @@ async function importArticle(
 
 export const getAllArticles = cache(async (tag?: string) => {
   let articleFilenames = await glob("*/page.mdx", {
-    cwd: "./app/blog/(posts)",
+    cwd: "./app/(default)/blog/(posts)",
   });
 
   let articles = await Promise.all(articleFilenames.map(importArticle));

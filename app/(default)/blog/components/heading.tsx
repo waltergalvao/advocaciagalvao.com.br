@@ -2,7 +2,7 @@
 
 import { useEffect, useRef } from "react";
 import { useSectionStore } from "./section";
-import { remToPx } from "@/app/blog/lib/remToPx";
+import { remToPx } from "@/app/(default)/blog/lib/remToPx";
 import { useInView } from "motion/react";
 import { Link } from "next-view-transitions";
 import { IconAnchor } from "@tabler/icons-react";

@@ -29,6 +29,16 @@ export default {
           500: "#5696FF",
           600: "#2174EA",
         },
+        navy: {
+          700: "#003366",
+          800: "#002147",
+          900: "#001529",
+        },
+        gold: {
+          400: "#D4AF37",
+          500: "#C5A059",
+          600: "#B8860B",
+        },
       },
       fontFamily: {
         inter: ["var(--font-inter)", "sans-serif"],

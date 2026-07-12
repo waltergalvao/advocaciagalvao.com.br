@@ -5,7 +5,7 @@ import glob from "fast-glob";
 export default async function BlogLayout(
   props: Readonly<{ children: React.ReactNode }>
 ) {
-  let pages = await glob("**/*.mdx", { cwd: "app/blog/(posts)" });
+  let pages = await glob("**/*.mdx", { cwd: "app/(default)/blog/(posts)" });
 
   let allSectionsEntries = (await Promise.all(
     pages.map(async (filename) => {
