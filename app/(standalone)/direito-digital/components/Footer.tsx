@@ -160,17 +160,6 @@ export function Footer() {
           </p>
 
           <div className="flex items-center gap-4">
-            <p>
-              Desenvolvimento por{" "}
-              <a
-                href="https://www.instagram.com/startdigitaloficial1/"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="text-navy-900 hover:text-gold-600 transition-colors font-bold underline underline-offset-4"
-              >
-                Start Digital
-              </a>
-            </p>
           </div>
         </div>
       </div>

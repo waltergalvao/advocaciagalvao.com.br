@@ -106,7 +106,7 @@ export function Problem() {
           >
             <a
               href="/direito-digital/obrigado"
-              className="inline-flex items-center gap-2 bg-navy-900 md:hover:bg-navy-800 text-white font-bold px-10 py-4.5 rounded-sm shadow-xl md:hover:-translate-y-0.5 transition-all uppercase text-xs tracking-wider"
+              className="inline-flex items-center gap-2 bg-navy-900 md:hover:bg-navy-800 text-white font-bold px-10 py-5 rounded-sm shadow-xl md:hover:-translate-y-0.5 transition-all uppercase text-xs tracking-wider"
             >
               Entender caminhos para o meu caso
               <span className="text-gold-400">→</span>
