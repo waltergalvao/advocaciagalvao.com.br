@@ -29,7 +29,7 @@ export default function StandaloneLayout({
   return (
     <ViewTransitions>
       <html lang="pt-BR">
-        <GoogleTagManager gtmId="GTM-T5HHG9LN" />
+        <GoogleTagManager gtmId="GTM-W4CNBX4C" />
         <body
           className={`${inter.variable} ${playfair.variable} font-inter antialiased bg-white text-slate-800 tracking-tight`}
         >
