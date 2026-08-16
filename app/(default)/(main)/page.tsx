@@ -7,9 +7,7 @@ import {
   ShieldAlert,
   Award,
   ArrowRight,
-  Shield,
-  Target,
-  Quote,
+  Quote, ScaleIcon
 } from 'lucide-react';
 import { FAQ } from "./components/FAQ";
 import { TestimonialsCarousel } from "./components/TestimonialsCarousel";
@@ -80,21 +78,21 @@ export default function Home() {
     }
   ];
 
-  const highlights = [
+  const stats = [
     {
-      icon: <Award className="w-5 h-5 text-gold-500" />,
-      title: "Experiência no Direito Digital",
-      text: "+7 anos de dedicação exclusiva em blindar negócios digitais contra abusos e bloqueios."
+      number: "+7",
+      suffix: "anos",
+      label: "De dedicação exclusiva em blindar negócios digitais contra abusos e bloqueios de plataformas."
     },
     {
-      icon: <Shield className="w-5 h-5 text-gold-500" />,
-      title: "Atuação contra Grandes Marketplaces",
-      text: "Histórico consolidado de êxito contra Mercado Livre, Amazon, Shopee, Magalu e outras."
+      number: "R$ 1M+",
+      suffix: "",
+      label: "Mais de 1 milhão em saldos recuperados e faturamentos protegidos para sellers em todo o país."
     },
     {
-      icon: <Target className="w-5 h-5 text-gold-500" />,
-      title: "Resultados Relevantes",
-      text: "+R$ 1 Milhão de saldos arbitrários reavidos e faturamentos protegidos em todo o país."
+      number: "27",
+      suffix: "estados",
+      label: "Atuação nacional contra Mercado Livre, Amazon, Shopee, Magalu e outras plataformas de e-commerce."
     }
   ];
 
@@ -113,20 +111,20 @@ export default function Home() {
 
         <div className="absolute inset-0 bg-navy-900/50 md:bg-gradient-to-r md:from-navy-900/90 md:via-navy-900/60 md:to-transparent z-10" />
 
-        <div className="container mx-auto px-4 md:px-6 relative z-20 pt-20">
-          <div className="max-w-3xl">
-            <h1 className="text-3xl md:text-5xl lg:text-6xl font-serif font-bold text-white leading-tight mb-6">
-              Proteção Jurídica Especializada para Operações de E-commerce
+        <div className="container mx-auto px-4 md:px-6 relative z-20 py-24">
+          <div className="max-w-4xl">
+            <h1 className="text-4xl md:text-6xl lg:text-7xl font-serif font-bold text-white leading-[1.1] mb-8">
+              Proteção Jurídica para Operações de E-commerce
             </h1>
 
-            <p className="text-base md:text-lg text-white/90 mb-8 leading-relaxed max-w-2xl">
+            <p className="text-lg md:text-xl text-white/90 mb-10 leading-relaxed max-w-2xl">
               Defesa estratégica para sellers contra bloqueios arbitrários de contas, retenção indevida de saldos e concorrência desleal. Restabelecemos seu fluxo de faturamento com agilidade e rigor técnico.
             </p>
 
-            <div className="flex flex-col sm:flex-row gap-4 mb-8">
+            <div className="flex flex-col sm:flex-row gap-4">
               <a
                 href="https://wa.me/5514997785999?text=Ol%C3%A1%2C%20vi%20seu%20site%20e%20gostaria%20de%20falar%20com%20o%20Advogado%20especialista%20em%20Direito%20Digital%20e%20Processo%20Civil."
-                className="bg-gold-500 hover:bg-gold-600 text-navy-900 px-8 py-4 rounded-sm font-bold text-base uppercase tracking-wider transition-all text-center shadow-lg hover:shadow-gold-500/20 active:scale-95"
+                className="bg-gold-500 hover:bg-gold-600 text-navy-900 px-10 py-4.5 rounded-sm font-bold text-sm uppercase tracking-wider transition-all text-center shadow-lg hover:shadow-gold-500/20 active:scale-95"
               >
                 Falar com um Advogado Especialista
               </a>
@@ -136,65 +134,89 @@ export default function Home() {
       </section>
 
       {/* Marketplaces */}
-      <section id="plataformas" className="py-16 bg-gray-50 border-y border-gray-200/50 overflow-hidden">
+      <section id="plataformas" className="py-14 md:py-24 bg-gray-50 border-y border-gray-200/50 overflow-hidden">
         <div className="container mx-auto px-4 md:px-6">
           <h3 className="text-center text-navy-900/60 text-xs md:text-sm font-bold uppercase tracking-widest mb-12">
-            Expertise Técnica Homologada Frente às Maiores Plataformas
+            Especialista nas Maiores Plataformas de E-commerce
           </h3>
 
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-8 md:gap-12 items-center justify-items-center">
+          <div className="flex items-center justify-center gap-24">
             {platforms.map((platform) => (
               <div
                 key={platform.name}
-                className="flex flex-col items-center justify-center opacity-75 md:hover:opacity-100 transition-all cursor-default"
+                className="flex flex-col items-center justify-center"
               >
                 <img
                   src={platform.src}
                   alt={`Logo ${platform.name}`}
-                  className="h-[70px] w-auto object-contain drop-shadow-md"
+                  className="h-[90px] w-auto object-contain drop-shadow-md"
                 />
               </div>
             ))}
           </div>
 
-          <p className="text-center text-gray-500 text-xs mt-12 italic max-w-lg mx-auto leading-relaxed">
+          <p className="text-center text-gray-500 text-sm mt-12 max-w-lg mx-auto leading-relaxed">
             Nossa advocacia abrange disputas e consultoria em qualquer ecossistema de marketplace ou plataforma de e-commerce própria sob avaliação técnica.
           </p>
         </div>
       </section>
 
-      {/* Practice Areas */}
-      <section id="servicos-resumo" className="py-24 bg-white border-b border-gray-100">
+      {/* Practice Areas — Featured + Grid */}
+      <section id="servicos-resumo" className="py-24 lg:py-48 bg-white border-b border-gray-100">
         <div className="container mx-auto px-4 md:px-6">
-          <div className="max-w-3xl mx-auto text-center mb-16">
-            <span className="text-gold-600 font-bold uppercase tracking-widest text-xs md:text-sm block mb-3">Soluções Jurídicas</span>
-            <h2 className="text-3xl md:text-4xl lg:text-5xl font-serif font-bold text-navy-900 tracking-tight leading-tight">
-              Atuação Estratégica em Direito de E-commerce
+          <div className=" mx-auto text-center mb-20">
+            <span className="text-gold-600 font-bold uppercase tracking-widest text-xs md:text-sm block mb-4">Soluções Jurídicas</span>
+            <h2 className="text-3xl md:text-4xl lg:text-6xl font-serif font-bold text-navy-900 tracking-tight leading-tight">
+              Atuação Estratégica em <br/>Direito de E-commerce
             </h2>
-            <p className="text-sm md:text-base text-gray-500 mt-4 leading-relaxed max-w-xl mx-auto">
+            <p className="text-base md:text-lg text-gray-500 mt-6 leading-relaxed max-w-xl mx-auto">
               Articulamos defesas baseadas nas especificidades contratuais e regulatórias do setor digital, devolvendo previsibilidade ao fluxo de caixa do seu negócio.
             </p>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-6 max-w-7xl mx-auto items-stretch">
-            {summaryServices.map((service, index) => (
-              <div
-                key={index}
-                className="p-6 bg-white border border-gray-100 rounded-xl shadow-sm md:hover:shadow-md md:hover:border-gold-500/40 transition-all flex flex-col justify-between"
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 max-w-6xl mx-auto">
+            {/* Featured service */}
+            <div className="bg-navy-900 text-white p-10 md:p-12 rounded-xl flex flex-col justify-between relative overflow-hidden">
+              <div className="absolute -right-16 -bottom-16 w-64 h-64 bg-gold-500/5 rounded-full blur-3xl pointer-events-none" />
+              <div className="relative z-10">
+                <div className="text-gold-500 mb-6">
+                  {summaryServices[0].icon}
+                </div>
+                <h4 className="font-serif font-bold text-2xl md:text-3xl mb-4 tracking-tight leading-tight">
+                  {summaryServices[0].title}
+                </h4>
+                <p className="text-white/70 text-base leading-relaxed max-w-md">
+                  {summaryServices[0].desc}
+                </p>
+              </div>
+              <a
+                href="https://wa.me/5514997785999?text=Ol%C3%A1%2C%20vi%20seu%20site%20e%20gostaria%20de%20falar%20com%20o%20Advogado%20especialista%20em%20Direito%20Digital%20e%20Processo%20Civil."
+                className="relative z-10 inline-flex items-center gap-2 text-gold-400 hover:text-gold-300 font-bold text-xs uppercase tracking-widest mt-8 transition-colors"
               >
-                <div>
-                  <div className="text-gold-600 mb-5">
+                Falar com especialista
+                <ArrowRight className="w-4 h-4" />
+              </a>
+            </div>
+
+            {/* 2×2 grid of remaining services */}
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
+              {summaryServices.slice(1).map((service, index) => (
+                <div
+                  key={index}
+                  className="p-7 bg-white border border-gray-100 rounded-xl shadow-sm md:hover:shadow-md md:hover:border-gold-500/40 transition-all flex flex-col"
+                >
+                  <div className="text-gold-600 mb-4">
                     {service.icon}
                   </div>
-                  <h4 className="font-bold text-navy-900 text-sm md:text-base mb-3 tracking-tight">
+                  <h4 className="font-bold text-navy-900 text-base mb-3 tracking-tight">
                     {service.title}
                   </h4>
-                  <p className="text-gray-500 text-xs leading-relaxed">
+                  <p className="text-gray-500 text-sm leading-relaxed">
                     {service.desc}
                   </p>
                 </div>
-              </div>
-            ))}
+              ))}
+            </div>
           </div>
 
           <div className="mt-16 text-center">
@@ -209,59 +231,69 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Authority */}
-      <section id="autoridade-resumo" className="py-24 bg-gray-50 border-b border-gray-100">
-        <div className="container mx-auto px-4 md:px-6">
-          <div className="flex flex-col lg:flex-row items-center gap-16 max-w-6xl mx-auto">
+      <section
+        id="autoridade-resumo"
+        className="py-24 lg:py-48 relative overflow-hidden "
+        style={{
+          background: `
+            linear-gradient(135deg,  #0a2540 1%, #001529 70%,  #001529 100%)
+          `,
+        }}
+      >
+        <div className="container mx-auto px-4 md:px-6 relative z-10">
+          <div className="mx-auto text-center mb-16 lg:mb-32">
+            <h2 className="text-gold-500 font-bold uppercase tracking-widest text-xs md:text-sm mb-4">Nossos resultados</h2>
+            <h2 className="mx-auto text-3xl md:text-4xl lg:text-6xl font-serif font-bold text-white leading-tight tracking-tight mb-6">
+              Defesa Jurídica<br/>Especializada e Reconhecida
+            </h2>
+            <p className="text-white/50 text-base md:text-lg leading-relaxed max-w-2xl mx-auto">
+              Nossa equipe atua na linha de frente do Direito Digital, traduzindo regras complexas de compliance em defesas rápidas para manter sua loja faturando.
+            </p>
+          </div>
 
-            <div className="lg:w-1/2">
-              <span className="text-gold-600 font-bold uppercase tracking-widest text-xs md:text-sm block mb-3">Autoridade de Destaque</span>
-              <h2 className="text-3xl md:text-4xl lg:text-5xl font-serif font-bold text-navy-900 leading-tight tracking-tight mb-6">
-                Defesa Jurídica Especializada e Reconhecida
-              </h2>
-              <p className="text-gray-500 text-sm md:text-base leading-relaxed mb-8 max-w-xl">
-                Nossa equipe atua na linha de frente do Direito Digital, traduzindo regras complexas de compliance em defesas rápidas para manter sua loja faturando.
-              </p>
-
-              <Link
-                href="/sobre"
-                className="inline-flex items-center gap-2 text-gold-600 hover:text-gold-700 font-bold text-xs uppercase tracking-widest transition-colors cursor-pointer focus:outline-none"
-              >
-                Conhecer nossa história completa, valores e OAB
-                <ArrowRight className="w-4 h-4" />
-              </Link>
-            </div>
-
-            <div className="lg:w-1/2 w-full grid gap-4">
-              {highlights.map((item, index) => (
-                <div
-                  key={index}
-                  className="flex items-start gap-4 p-6 bg-white border border-gray-100/80 rounded-xl shadow-sm hover:shadow-md transition-all duration-300"
-                >
-                  <div className="p-3 bg-navy-900/5 rounded-lg shrink-0">
-                    {item.icon}
+          <div>
+            <div className="grid grid-cols-1 md:grid-cols-3 divide-y md:divide-y-0 md:divide-x divide-gold-500/20">
+              {stats.map((stat, index) => (
+                <div key={index} className="text-center py-10 md:py-0 md:px-10">
+                  <div className="flex items-baseline justify-center gap-2">
+                    <span className="text-5xl md:text-6xl lg:text-7xl font-sans font-bold text-gold-500 tracking-tight leading-none">
+                      {stat.number}
+                    </span>
+                    {stat.suffix && (
+                      <span className="text-xl md:text-2xl font-sans text-gold-500/60 font-bold">
+                        {stat.suffix}
+                      </span>
+                    )}
                   </div>
-                  <div>
-                    <h4 className="font-bold text-navy-900 text-sm md:text-base mb-1 tracking-tight">{item.title}</h4>
-                    <p className="text-gray-500 text-xs md:text-sm leading-relaxed">{item.text}</p>
-                  </div>
+                  <p className="text-white/50 text-md leading-relaxed mt-4 max-w-xs mx-auto">
+                    {stat.label}
+                  </p>
                 </div>
               ))}
             </div>
+          </div>
 
+          <div className="text-center mt-16 lg:mt-24">
+            <Link
+              href="/sobre"
+              className="inline-flex items-center gap-2 text-gold-500 hover:text-gold-300 font-bold text-md uppercase tracking-widest transition-colors cursor-pointer focus:outline-none"
+            >
+              Conhecer nossa história
+              <ArrowRight className="w-4 h-4" />
+            </Link>
           </div>
         </div>
       </section>
 
       {/* Testimonials */}
-      <section id="depoimentos" className="py-24 bg-gray-50 overflow-hidden border-y border-gray-100">
+      <section id="depoimentos" className="py-24 lg:py-48 overflow-hidden border-b border-gray-100 bg-gray-50">
         <div className="container mx-auto px-4 md:px-6">
-          <div className="text-center mb-16">
-            <h2 className="text-gold-600 font-bold uppercase tracking-widest text-sm mb-4">Depoimentos de Clientes</h2>
-            <h3 className="text-3xl md:text-4xl lg:text-5xl font-serif font-bold text-navy-900 tracking-tight">
-              Resultados Concretos e Parcerias de Confiança
+          <div className="text-center mb-20">
+            <h2 className="text-gold-600 font-bold uppercase tracking-widest text-xs md:text-sm mb-4">Depoimentos de Clientes</h2>
+            <h3 className="text-3xl md:text-4xl lg:text-6xl font-serif font-bold text-navy-900 tracking-tight">
+              Resultados Concretos e <br/>Parcerias de Confiança
             </h3>
-            <p className="text-gray-500 text-sm md:text-base mt-2 max-w-xl mx-auto">
+            <p className="text-gray-500 text-base md:text-lg mt-4 max-w-xl mx-auto leading-relaxed">
               A satisfação das operações que blindamos é o reflexo de nossa dedicação técnica exclusiva.
             </p>
           </div>
@@ -271,9 +303,9 @@ export default function Home() {
             {reviews.map((review, index) => (
               <div
                 key={index}
-                className="bg-white p-8 rounded-xl shadow-sm border border-gray-100/50 relative group md:hover:shadow-xl md:hover:-translate-y-1.5 transition-all duration-300 flex flex-col justify-between"
+                className="bg-white p-10 rounded-xl shadow-sm border border-gray-100/50 relative group md:hover:shadow-xl md:hover:-translate-y-1.5 transition-all duration-300 flex flex-col justify-between"
               >
-                <Quote className="absolute top-6 right-8 w-12 h-12 text-gold-500/10" />
+                <Quote className="absolute top-8 right-8 w-12 h-12 text-gold-500/20" />
                 <div className="relative z-10 flex flex-col h-full justify-between">
                   <div>
                     <div className="flex gap-1 mb-5">
@@ -281,12 +313,12 @@ export default function Home() {
                         <span key={s} className="text-gold-500 text-lg">&#9733;</span>
                       ))}
                     </div>
-                    <p className="text-gray-600 italic mb-8 leading-relaxed text-sm">
+                    <p className="text-gray-600 italic mb-8 leading-relaxed text-base">
                       &ldquo;{review.text}&rdquo;
                     </p>
                   </div>
 
-                  <div className="flex items-center gap-3.5 pt-4 border-t border-gray-100">
+                  <div className="flex items-center gap-3.5 pt-5 border-t border-gray-100">
                     <div className="w-11 h-11 rounded-full bg-gold-500/10 border border-gold-500/20 text-gold-600 flex items-center justify-center font-bold text-base select-none shrink-0">
                       {review.name.split(' ')[0][0]}{review.name.split(' ')[1]?.[0] || ''}
                     </div>
@@ -309,32 +341,22 @@ export default function Home() {
       <FAQ />
 
       {/* Final CTA */}
-      <section className="py-24 bg-navy-900 relative overflow-hidden">
-        <div className="absolute bottom-0 right-0 w-[40rem] h-[40rem] bg-gold-500/5 rounded-full translate-x-1/3 translate-y-1/3 blur-3xl pointer-events-none"></div>
-
-        <div className="container mx-auto px-4 md:px-6 relative z-10">
-          <div className="max-w-4xl mx-auto text-center border border-gold-500/20 p-8 md:p-16 rounded-3xl backdrop-blur-sm bg-white/5">
-            <h2 className="text-3xl md:text-5xl font-serif font-bold text-white mb-6">
-              Garanta a Blindagem e a Estabilidade da sua Operação de Vendas
-            </h2>
-
-            <p className="text-base md:text-lg text-white/70 mb-10 leading-relaxed max-w-2xl mx-auto">
-              Evite prejuízos operacionais e restabeleça o controle financeiro do seu e-commerce. Nossos especialistas estão prontos para examinar a inconformidade da sua conta e traçar o melhor direcionamento técnico.
-            </p>
-
-            <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
-              <a
-                href="https://wa.me/5514997785999?text=Ol%C3%A1%2C%20vi%20seu%20site%20e%20gostaria%20de%20falar%20com%20o%20Advogado%20especialista%20em%20Direito%20Digital%20e%20Processo%20Civil."
-                className="w-full sm:w-auto bg-gold-500 md:hover:bg-gold-600 text-navy-900 px-12 py-5 rounded-sm font-bold text-base uppercase tracking-wider shadow-xl shadow-gold-500/10 transition-all md:hover:-translate-y-1 text-center cursor-pointer"
-              >
-                Iniciar Diagnóstico Especializado
-              </a>
-            </div>
-
-            <p className="mt-8 text-white/40 text-xs tracking-wider uppercase font-medium">
-              Atendimento direto por canais seguros e sigilo profissional absoluto.
-            </p>
-          </div>
+      <section className="py-24 lg:py-32 bg-navy-900 text-white relative overflow-hidden">
+        <div className="container mx-auto px-4 md:px-6 relative z-10 max-w-4xl text-center">
+          <ScaleIcon className="w-12 h-12 text-gold-500 mx-auto mb-8" />
+          <h2 className="text-3xl md:text-4xl lg:text-5xl font-serif font-bold mb-6">
+          Sua operação está em risco. <br/>O próximo passo é jurídico.
+          </h2>
+          <p className="text-white/80 text-base md:text-lg mb-12 max-w-2xl mx-auto leading-relaxed">
+            Entre em contato para realizar uma avaliação prévia gratuita de seu caso.
+          </p>
+          <a
+            href="https://wa.me/5514997785999?text=Ol%C3%A1%2C%20vi%20seu%20site%20e%20gostaria%20de%20falar%20com%20o%20Advogado%20especialista%20em%20Direito%20Digital%20e%20Processo%20Civil."
+            className="inline-flex items-center gap-2 bg-gold-500 hover:bg-gold-600 text-navy-900 font-bold px-12 py-5 rounded-sm shadow-xl transition-all uppercase text-xs tracking-widest"
+          >
+            Falar com Especialista Sem Custo
+            <ArrowRight className="w-4 h-4" />
+          </a>
         </div>
       </section>
     </>

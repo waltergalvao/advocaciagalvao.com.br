@@ -48,7 +48,7 @@ export function FAQ() {
   };
 
   return (
-    <section id="faq" className="py-24 bg-white">
+    <section id="faq" className="py-24 lg:py-32 bg-white">
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
@@ -56,8 +56,8 @@ export function FAQ() {
       <div className="container mx-auto px-4 md:px-6">
         <div className="max-w-3xl mx-auto">
           <div className="text-center mb-16">
-            <h2 className="text-gold-600 font-bold uppercase tracking-widest text-sm mb-4">FAQ</h2>
-            <h3 className="text-3xl md:text-4xl font-serif font-bold text-navy-900">
+            <h2 className="text-gold-600 font-bold uppercase tracking-widest text-xs md:text-sm mb-4">FAQ</h2>
+            <h3 className="text-3xl md:text-4xl lg:text-6xl font-serif font-bold text-navy-900">
               Dúvidas Frequentes
             </h3>
           </div>
@@ -68,8 +68,8 @@ export function FAQ() {
                 key={index}
                 className="group border border-gray-100 rounded-lg overflow-hidden transition-all duration-300 md:hover:shadow-md"
               >
-                <summary className="flex items-center justify-between p-5 md:p-6 text-left bg-gray-50 md:hover:bg-white transition-colors cursor-pointer list-none [&::-webkit-details-marker]:hidden">
-                  <span className="font-bold text-navy-900 pr-8">{faq.q}</span>
+                <summary className="flex items-center justify-between p-6 md:p-7 text-left bg-gray-50 md:hover:bg-white transition-colors cursor-pointer list-none [&::-webkit-details-marker]:hidden">
+                  <span className="font-bold text-navy-900 pr-8 text-base">{faq.q}</span>
                   <svg
                     className="w-5 h-5 text-navy-800/30 shrink-0 transition-transform duration-300 group-open:rotate-45 group-open:text-gold-500"
                     fill="none"
@@ -82,7 +82,7 @@ export function FAQ() {
                 </summary>
                 <div className="grid grid-rows-[0fr] group-open:grid-rows-[1fr] transition-[grid-template-rows] duration-300">
                   <div className="overflow-hidden">
-                    <div className="p-6 text-gray-600 border-t border-gray-100 bg-white leading-relaxed">
+                    <div className="p-7 text-gray-600 border-t border-gray-100 bg-white leading-relaxed text-base">
                       {faq.a}
                     </div>
                   </div>

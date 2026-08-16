@@ -62,12 +62,12 @@ export function Navbar() {
         </Link>
 
         {/* Desktop Menu */}
-        <div className="hidden lg:flex items-center gap-x-5 xl:gap-x-7">
+        <div className="hidden lg:flex items-center gap-x-6 xl:gap-x-8">
           {menuItems.map((item) => (
             <Link
               key={item.tab}
               href={tabToRoute[item.tab]}
-              className={`text-[11px] xl:text-[12px] font-bold uppercase tracking-widest transition-colors py-2 cursor-pointer focus:outline-none ${
+              className={`text-xs xl:text-[13px] font-bold uppercase tracking-widest transition-colors py-2 cursor-pointer focus:outline-none ${
                 isActive(item.tab) ? 'text-gold-600 border-b-2 border-gold-500' : 'text-navy-900 md:hover:text-gold-600'
               }`}
             >
@@ -77,7 +77,7 @@ export function Navbar() {
 
           {/* Solutions Dropdown Menu */}
           <div className="relative group/dropdown">
-            <button className="flex items-center gap-1 text-[11px] xl:text-[12px] font-bold uppercase tracking-widest text-navy-900 md:hover:text-gold-600 transition-colors py-2 focus:outline-none cursor-pointer">
+            <button className="flex items-center gap-1 text-xs xl:text-[13px] font-bold uppercase tracking-widest text-navy-900 md:hover:text-gold-600 transition-colors py-2 focus:outline-none cursor-pointer">
               Atalhos <ChevronDown className="w-3.5 h-3.5 transition-transform md:group-hover/dropdown:rotate-180" />
             </button>
             <div className="absolute top-full right-0 mt-1 w-64 bg-white/95 backdrop-blur-md border border-navy-900/10 rounded-lg shadow-2xl py-3 opacity-0 invisible translate-y-2 lg:group-hover/dropdown:opacity-100 lg:group-hover/dropdown:visible lg:group-hover/dropdown:translate-y-0 transition-all duration-200 z-50">
@@ -85,7 +85,7 @@ export function Navbar() {
                 <Link
                   key={item.label}
                   href={item.href}
-                  className="block w-full text-left px-6 py-2.5 text-[10px] font-bold uppercase tracking-wider transition-colors text-navy-800 md:hover:text-gold-600 md:hover:bg-navy-900/5 cursor-pointer"
+                  className="block w-full text-left px-6 py-2.5 text-[11px] font-bold uppercase tracking-wider transition-colors text-navy-800 md:hover:text-gold-600 md:hover:bg-navy-900/5 cursor-pointer"
                 >
                   {item.label}
                 </Link>

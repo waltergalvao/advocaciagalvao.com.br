@@ -91,32 +91,32 @@ export default function ParceirosPage() {
   return (
     <div className="min-h-screen bg-white">
       {/* Banner */}
-      <section className="bg-navy-gradient text-white py-20 text-center relative overflow-hidden">
+      <section className="bg-navy-gradient text-white py-24 md:py-32 text-center relative overflow-hidden">
         <div className="absolute inset-0 bg-gradient-to-b from-navy-900/40 to-navy-950/90 z-0"></div>
         <div className="container mx-auto px-4 md:px-6 relative z-10 max-w-4xl">
-          <span className="text-gold-400 font-bold uppercase tracking-widest text-xs block mb-3">Rede de Sinergia</span>
-          <h1 className="text-3xl md:text-5xl font-serif font-bold mb-4 tracking-tight leading-tight">
+          <span className="text-gold-400 font-bold uppercase tracking-widest text-xs block mb-4">Rede de Sinergia</span>
+          <h1 className="text-4xl md:text-5xl lg:text-6xl font-serif font-bold mb-6 tracking-tight leading-[1.1]">
             Parcerias Estratégicas - Juntos Podemos Ir Mais Longe
           </h1>
-          <p className="text-white/85 text-sm md:text-base max-w-2xl mx-auto leading-relaxed">
+          <p className="text-white/85 text-base md:text-lg max-w-2xl mx-auto leading-relaxed">
             Na Advocacia Galvão, valorizamos alianças sólidas de benefício mútuo. Unimos inteligências e especialidades para resguardar a integridade de negócios e e-commerces em todo o país.
           </p>
         </div>
       </section>
 
       {/* Intro & Manifesto */}
-      <section className="py-24 bg-white">
+      <section className="py-24 lg:py-32 bg-white">
         <div className="container mx-auto px-4 md:px-6">
-          <div className="max-w-4xl mx-auto flex flex-col lg:flex-row items-center gap-16">
+          <div className="max-w-5xl mx-auto flex flex-col lg:flex-row items-center gap-16 lg:gap-20">
             <div className="lg:w-1/2">
-              <span className="text-gold-600 font-bold uppercase tracking-widest text-xs md:text-sm block mb-3">Nosso Propósito</span>
-              <h2 className="text-2xl md:text-3xl lg:text-4xl font-serif font-bold text-navy-900 mb-6 leading-tight tracking-tight">
+              <span className="text-gold-600 font-bold uppercase tracking-widest text-xs md:text-sm block mb-4">Nosso Propósito</span>
+              <h2 className="text-3xl md:text-4xl lg:text-5xl font-serif font-bold text-navy-900 mb-6 leading-tight tracking-tight">
                 Construindo uma Rede de Defesa e Excelência
               </h2>
-              <p className="text-gray-500 text-sm md:text-base leading-relaxed mb-6">
+              <p className="text-gray-500 text-base md:text-lg leading-relaxed mb-6">
                 Acreditamos firmemente no poder da cooperação estruturada. Quer você atue como advogado, criador de conteúdo, palestrante, mentor ou empresário de tecnologia, existe espaço em nossa banca para desenvolvermos conexões sólidas de negócios.
               </p>
-              <p className="text-gray-500 text-sm md:text-base leading-relaxed">
+              <p className="text-gray-500 text-base md:text-lg leading-relaxed">
                 Nossa prioridade é prestar soluções jurídicas personalizadas com agilidade técnica, amparados por uma rede nacional de parceiros comprometidos com os mesmos valores de transparência e profissionalismo.
               </p>
             </div>
@@ -126,14 +126,14 @@ export default function ParceirosPage() {
               {valueProps.map((prop, i) => (
                 <div
                   key={i}
-                  className="p-6 bg-gray-50 rounded-xl border border-gray-100 flex items-start gap-4 hover:shadow-sm transition-shadow duration-300"
+                  className="p-7 bg-gray-50 rounded-xl border border-gray-100 flex items-start gap-5 hover:shadow-sm transition-shadow duration-300"
                 >
                   <div className="p-2.5 bg-navy-900/5 rounded-lg text-gold-600 shrink-0 mt-1">
                     {prop.icon}
                   </div>
                   <div>
-                    <h3 className="font-bold text-navy-900 text-sm md:text-base mb-1 tracking-tight">{prop.title}</h3>
-                    <p className="text-gray-500 text-xs md:text-sm leading-relaxed">{prop.desc}</p>
+                    <h3 className="font-bold text-navy-900 text-base mb-1.5 tracking-tight">{prop.title}</h3>
+                    <p className="text-gray-500 text-sm leading-relaxed">{prop.desc}</p>
                   </div>
                 </div>
               ))}
@@ -143,14 +143,14 @@ export default function ParceirosPage() {
       </section>
 
       {/* Perfis de Parceiros */}
-      <section className="py-24 bg-gray-50/50 border-t border-b border-gray-100">
+      <section className="py-24 lg:py-32 bg-gray-50/50 border-t border-b border-gray-100">
         <div className="container mx-auto px-4 md:px-6">
-          <div className="text-center max-w-2xl mx-auto mb-16">
-            <span className="text-gold-600 font-bold uppercase tracking-widest text-xs md:text-sm block mb-3">Modelos de Colaboração</span>
-            <h2 className="text-3xl md:text-4xl font-serif font-bold text-navy-900 tracking-tight">
+          <div className="text-center max-w-3xl mx-auto mb-20">
+            <span className="text-gold-600 font-bold uppercase tracking-widest text-xs md:text-sm block mb-4">Modelos de Colaboração</span>
+            <h2 className="text-3xl md:text-4xl lg:text-5xl font-serif font-bold text-navy-900 tracking-tight">
               Quem Pode Ser Nosso Parceiro?
             </h2>
-            <p className="text-gray-500 text-xs md:text-sm mt-3 max-w-lg mx-auto leading-relaxed">
+            <p className="text-gray-500 text-base md:text-lg mt-4 max-w-lg mx-auto leading-relaxed">
               Descubra onde o seu perfil se conecta ao ecossistema de soluções jurídicas avançadas do nosso escritório.
             </p>
           </div>
@@ -159,14 +159,14 @@ export default function ParceirosPage() {
             {partnerTypes.map((type, i) => (
               <div
                 key={i}
-                className="p-8 bg-white rounded-xl border border-gray-100 shadow-sm hover:shadow-md transition-all duration-300 flex flex-col justify-between"
+                className="p-10 bg-white rounded-xl border border-gray-100 shadow-sm hover:shadow-md transition-all duration-300 flex flex-col justify-between"
               >
                 <div>
                   <div className="w-12 h-12 bg-navy-900/5 flex items-center justify-center rounded-lg text-gold-600 mb-6 shrink-0">
                     {type.icon}
                   </div>
-                  <h3 className="text-lg font-bold text-navy-900 mb-3 tracking-tight">{type.title}</h3>
-                  <p className="text-gray-500 text-xs md:text-sm leading-relaxed">{type.desc}</p>
+                  <h3 className="text-xl font-bold text-navy-900 mb-4 tracking-tight">{type.title}</h3>
+                  <p className="text-gray-500 text-sm leading-relaxed">{type.desc}</p>
                 </div>
               </div>
             ))}
@@ -175,25 +175,25 @@ export default function ParceirosPage() {
       </section>
 
       {/* Como Funciona */}
-      <section className="py-24 bg-white border-b border-gray-100">
+      <section className="py-24 lg:py-32 bg-white border-b border-gray-100">
         <div className="container mx-auto px-4 md:px-6">
-          <div className="text-center max-w-2xl mx-auto mb-16">
-            <span className="text-gold-600 font-bold uppercase tracking-widest text-xs md:text-sm block mb-3">Fluxo de Integração</span>
-            <h2 className="text-3xl md:text-4xl font-serif font-bold text-navy-900 tracking-tight">
+          <div className="text-center max-w-3xl mx-auto mb-20">
+            <span className="text-gold-600 font-bold uppercase tracking-widest text-xs md:text-sm block mb-4">Fluxo de Integração</span>
+            <h2 className="text-3xl md:text-4xl lg:text-5xl font-serif font-bold text-navy-900 tracking-tight">
               Como Funciona a Integração de Parcerias?
             </h2>
           </div>
 
           <div className="grid md:grid-cols-3 gap-8 max-w-5xl mx-auto">
             {steps.map((step, idx) => (
-              <div key={idx} className="p-8 bg-gray-50 rounded-xl border border-gray-100 relative">
-                <span className="absolute -top-4 left-8 w-8 h-8 rounded-full bg-navy-900 text-gold-400 flex items-center justify-center font-bold text-sm border border-gold-500/40">
+              <div key={idx} className="p-10 bg-gray-50 rounded-xl border border-gray-100 relative">
+                <span className="absolute -top-4 left-10 w-8 h-8 rounded-full bg-navy-900 text-gold-400 flex items-center justify-center font-bold text-sm border border-gold-500/40">
                   {idx + 1}
                 </span>
-                <h3 className="text-lg font-serif font-bold text-navy-900 mb-3 tracking-tight pt-2">
+                <h3 className="text-xl font-serif font-bold text-navy-900 mb-4 tracking-tight pt-2">
                   {step.title}
                 </h3>
-                <p className="text-gray-500 text-xs md:text-sm leading-relaxed">
+                <p className="text-gray-500 text-sm leading-relaxed">
                   {step.desc}
                 </p>
               </div>
@@ -203,18 +203,18 @@ export default function ParceirosPage() {
       </section>
 
       {/* CTA Final */}
-      <section className="py-24 bg-white text-center">
+      <section className="py-24 lg:py-32 bg-white text-center">
         <div className="container mx-auto px-4 md:px-6 max-w-2xl">
-          <Handshake className="w-14 h-14 text-gold-500 mx-auto mb-6" />
-          <h2 className="text-3xl md:text-4xl font-serif font-bold text-navy-900 tracking-tight mb-4">
+          <Handshake className="w-14 h-14 text-gold-500 mx-auto mb-8" />
+          <h2 className="text-3xl md:text-4xl lg:text-5xl font-serif font-bold text-navy-900 tracking-tight mb-6">
             Construa Uma Parceria Sólida Conosco
           </h2>
-          <p className="text-gray-500 text-sm md:text-base mb-10 leading-relaxed max-w-xl mx-auto">
+          <p className="text-gray-500 text-base md:text-lg mb-12 leading-relaxed max-w-xl mx-auto">
             Seja integrando clientes, compartilhando conhecimento técnico ou prestando co-assessoria sob medida, estamos prontos para receber sua proposta.
           </p>
           <a
             href="https://wa.me/5514997785999?text=Ol%C3%A1%2C%20vi%20seu%20site%20e%20gostaria%20de%20falar%20com%20o%20Advogado%20especialista%20em%20Direito%20Digital%20e%20Processo%20Civil."
-            className="inline-flex items-center gap-2 bg-gold-500 hover:bg-gold-600 text-navy-900 font-bold uppercase tracking-wider text-xs px-12 py-5 rounded-lg shadow-lg transition-all hover:shadow-gold-500/20 active:scale-95"
+            className="inline-flex items-center gap-2 bg-gold-500 hover:bg-gold-600 text-navy-900 font-bold uppercase tracking-wider text-xs px-12 py-5 rounded-sm shadow-lg transition-all hover:shadow-gold-500/20 active:scale-95"
           >
             Seja um Parceiro Oficial
             <ArrowRight className="w-4 h-4" />

@@ -108,22 +108,22 @@ export function ServicesTabs() {
   return (
     <>
       {/* Banner Superior */}
-      <section className="bg-navy-gradient text-white py-16 text-center relative overflow-hidden">
+      <section className="bg-navy-gradient text-white py-24 md:py-32 text-center relative overflow-hidden">
         <div className="absolute inset-0 bg-gradient-to-b from-navy-900/40 to-navy-950/90 z-0"></div>
         <div className="container mx-auto px-4 md:px-6 relative z-10 max-w-4xl">
-          <span className="text-gold-400 font-bold uppercase tracking-widest text-xs block mb-3">Serviços Especializados</span>
-          <h1 className="text-3xl md:text-5xl font-serif font-bold mb-4 tracking-tight">
+          <span className="text-gold-400 font-bold uppercase tracking-widest text-xs block mb-4">Serviços Especializados</span>
+          <h1 className="text-4xl md:text-5xl lg:text-6xl font-serif font-bold mb-6 tracking-tight leading-[1.1]">
             Nossas Áreas de Atuação e Soluções Estruturadas
           </h1>
-          <p className="text-white/85 text-sm md:text-base max-w-2xl mx-auto">
+          <p className="text-white/85 text-base md:text-lg max-w-2xl mx-auto leading-relaxed">
             Garantimos suporte jurídico robusto, transparente e com forte foco na saúde institucional e na segurança da sua operação digital.
           </p>
 
           {/* Tab Toggles */}
-          <div className="flex justify-center gap-4 mt-10">
+          <div className="flex justify-center gap-4 mt-12">
             <button
               onClick={() => setActiveTab('services')}
-              className={`px-6 py-3 rounded-full font-bold text-xs uppercase tracking-wider transition-all cursor-pointer ${
+              className={`px-8 py-3.5 rounded-full font-bold text-xs uppercase tracking-wider transition-all cursor-pointer ${
                 activeTab === 'services'
                   ? 'bg-gold-500 text-navy-900 shadow-md'
                   : 'bg-white/10 text-white hover:bg-white/20'
@@ -133,7 +133,7 @@ export function ServicesTabs() {
             </button>
             <button
               onClick={() => setActiveTab('practice')}
-              className={`px-6 py-3 rounded-full font-bold text-xs uppercase tracking-wider transition-all cursor-pointer ${
+              className={`px-8 py-3.5 rounded-full font-bold text-xs uppercase tracking-wider transition-all cursor-pointer ${
                 activeTab === 'practice'
                   ? 'bg-gold-500 text-navy-900 shadow-md'
                   : 'bg-white/10 text-white hover:bg-white/20'
@@ -146,7 +146,7 @@ export function ServicesTabs() {
       </section>
 
       {/* Conditionally Render Content */}
-      <section className="py-20 bg-gray-50/50">
+      <section className="py-24 lg:py-32 bg-gray-50/50">
         <div className="container mx-auto px-4 md:px-6">
           <AnimatePresence mode="wait">
             {activeTab === 'practice' ? (
@@ -161,24 +161,24 @@ export function ServicesTabs() {
                 {practiceAreas.map((area, index) => (
                   <div
                     key={index}
-                    className={`p-8 rounded-xl shadow-sm border-t-4 flex flex-col justify-between ${area.borderColor} ${area.bg}`}
+                    className={`p-10 rounded-xl shadow-sm border-t-4 flex flex-col justify-between ${area.borderColor} ${area.bg}`}
                   >
                     <div>
-                      <h3 className="text-xl md:text-2xl font-serif font-bold mb-4 tracking-tight">
+                      <h3 className="text-xl md:text-2xl font-serif font-bold mb-5 tracking-tight">
                         {area.title}
                       </h3>
-                      <p className={`text-xs md:text-sm mb-8 leading-relaxed ${area.bg.includes('navy') ? 'text-white/80' : 'text-gray-500'}`}>
+                      <p className={`text-sm mb-8 leading-relaxed ${area.bg.includes('navy') ? 'text-white/80' : 'text-gray-500'}`}>
                         {area.description}
                       </p>
 
                       <div className="space-y-6">
                         {area.topics.map((topic, idx) => (
                           <div key={idx} className="border-t border-gray-100/10 pt-4">
-                            <h4 className="font-bold text-sm uppercase tracking-wider text-gold-500 flex items-center gap-2 mb-1">
+                            <h4 className="font-bold text-sm uppercase tracking-wider text-gold-500 flex items-center gap-2 mb-2">
                               <Shield className="w-3.5 h-3.5 text-gold-400 shrink-0" />
                               {topic.name}
                             </h4>
-                            <p className={`text-xs ${area.bg.includes('navy') ? 'text-white/70' : 'text-gray-500'} leading-relaxed`}>
+                            <p className={`text-sm ${area.bg.includes('navy') ? 'text-white/70' : 'text-gray-500'} leading-relaxed`}>
                               {topic.desc}
                             </p>
                           </div>
@@ -200,18 +200,18 @@ export function ServicesTabs() {
                 {mainServices.map((service, index) => (
                   <div
                     key={index}
-                    className="p-8 bg-white rounded-xl border border-gray-100 shadow-sm hover:shadow-md transition-shadow flex flex-col justify-between"
+                    className="p-10 bg-white rounded-xl border border-gray-100 shadow-sm hover:shadow-md transition-shadow flex flex-col justify-between"
                   >
                     <div>
-                      <div className="flex items-center gap-3 text-gold-500 mb-6 border-b border-gray-100 pb-4">
+                      <div className="flex items-center gap-3 text-gold-500 mb-6 border-b border-gray-100 pb-5">
                         <div className="p-2.5 bg-gray-50 rounded-lg text-gold-600">
                           {service.icon}
                         </div>
-                        <h3 className="font-serif font-bold text-lg text-navy-900 tracking-tight">
+                        <h3 className="font-serif font-bold text-lg md:text-xl text-navy-900 tracking-tight">
                           {service.title}
                         </h3>
                       </div>
-                      <p className="text-gray-600 text-xs md:text-sm leading-relaxed mb-6">
+                      <p className="text-gray-600 text-sm leading-relaxed mb-6">
                         {service.desc}
                       </p>
                     </div>
@@ -229,25 +229,25 @@ export function ServicesTabs() {
             )}
           </AnimatePresence>
 
-          {/* Institutional Compliance Notice with NO price details */}
-          <div className="mt-16 bg-navy-900 text-white p-8 rounded-xl max-w-4xl mx-auto border border-gold-500/30">
-            <div className="flex flex-col md:flex-row items-center gap-6">
+          {/* Institutional Compliance Notice */}
+          <div className="mt-20 bg-navy-900 text-white p-10 md:p-12 rounded-xl max-w-4xl mx-auto border border-gold-500/30">
+            <div className="flex flex-col md:flex-row items-center gap-8">
               <div className="text-gold-400 shrink-0">
                 <Shield className="w-12 h-12" />
               </div>
               <div>
-                <h4 className="text-lg font-serif font-bold mb-2">Compromisso Ético e Rigor Profissional</h4>
-                <p className="text-white/70 text-xs leading-relaxed">
+                <h4 className="text-xl font-serif font-bold mb-3">Compromisso Ético e Rigor Profissional</h4>
+                <p className="text-white/70 text-sm leading-relaxed">
                   Todas as nossas frentes de atuação são pautadas nas diretrizes de ética estabelecidas pela Ordem dos Advogados do Brasil (OAB). Garantimos sigilo profissional absoluto na condução dos seus dados operacionais e comerciais, atuando como verdadeiros parceiros estratégicos para o crescimento sustentável de sua empresa.
                 </p>
               </div>
             </div>
           </div>
 
-          <div className="text-center mt-12">
+          <div className="text-center mt-14">
             <a
               href="https://wa.me/5514997785999?text=Ol%C3%A1%2C%20vi%20seu%20site%20e%20gostaria%20de%20falar%20com%20o%20Advogado%20especialista%20em%20Direito%20Digital%20e%20Processo%20Civil."
-              className="inline-flex items-center gap-2 bg-gold-500 hover:bg-gold-600 text-navy-900 font-bold px-10 py-4 rounded-sm shadow-xl transition-all uppercase text-xs tracking-wider"
+              className="inline-flex items-center gap-2 bg-gold-500 hover:bg-gold-600 text-navy-900 font-bold px-10 py-4.5 rounded-sm shadow-xl transition-all uppercase text-xs tracking-wider"
             >
               Agendar Consulta Inicial
               <span>→</span>
