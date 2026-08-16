@@ -1,124 +1,226 @@
-import { ParceiroForm } from "@/components/form/parceiro-form";
+import type { Metadata } from "next";
+import {
+  Users,
+  Handshake,
+  CheckCircle,
+  MapPin,
+  Briefcase,
+  BookOpen,
+  PenTool,
+  Cpu,
+  Sparkles,
+  ArrowRight,
+  ShieldCheck,
+  TrendingUp,
+  FileText
+} from 'lucide-react';
 
-export const metadata = {
-  title: "Galvão Advocacia",
+export const metadata: Metadata = {
+  title: "Parcerias Estratégicas | Advocacia Galvão",
+  description:
+    "Programa de parcerias estratégicas da Advocacia Galvão. Para advogados, escritórios, criadores de conteúdo e empresas de tecnologia.",
 };
 
-export default function Parceiros() {
+export default function ParceirosPage() {
+  const partnerTypes = [
+    {
+      title: "Advogados de Outros Estados",
+      icon: <MapPin className="w-6 h-6 text-gold-500" />,
+      desc: "Colaboração estratégica para representação local, realização de audiências qualificadas, cumprimento de diligências presenciais ou suporte operacional em tribunais fora da nossa base."
+    },
+    {
+      title: "Advogados & Escritórios Aliados",
+      icon: <Briefcase className="w-6 h-6 text-gold-500" />,
+      desc: "Se o seu escritório atende clientes com necessidades complexas de Direito Digital e e-commerce, somamos esforços atuando como parceiros técnicos em consultas estratégicas ou na elaboração de peças processuais específicas."
+    },
+    {
+      title: "Criadores de Conteúdo",
+      icon: <PenTool className="w-6 h-6 text-gold-500" />,
+      desc: "Blogueiros, influenciadores de negócios e especialistas digitais que criam materiais relevantes e desejam contar com respaldo jurídico de credibilidade para munir suas audiências."
+    },
+    {
+      title: "Palestrantes & Mentores",
+      icon: <BookOpen className="w-6 h-6 text-gold-500" />,
+      desc: "Líderes de grupos de mentoria, eventos corporativos e programas de treinamento para sellers que buscam integrar soluções jurídicas de conformidade em suas grades de ensino."
+    },
+    {
+      title: "Empresas & Soluções de Tecnologia",
+      icon: <Cpu className="w-6 h-6 text-gold-500" />,
+      desc: "Desenvolvedores de plataformas, assessores de ERP, consultorias de integração e hubs que enxergam sinergia em agregar segurança contratual e assessoria aos seus clientes lojistas."
+    },
+    {
+      title: "Outras Conexões de Valor",
+      icon: <Sparkles className="w-6 h-6 text-gold-500" />,
+      desc: "Qualquer empresa ou profissional estratégico que compartilhe o propósito de amparar, blindar e proteger operações comerciais frente às arbitrariedades regulatórias das plataformas digitais."
+    }
+  ];
+
+  const valueProps = [
+    {
+      title: "Benefício Mútuo e Crescimento",
+      desc: "Compartilhamos ativamente oportunidades reais, indicações recíprocas de clientes altamente qualificados, convites para palestras e projetos institucionais conjuntos.",
+      icon: <TrendingUp className="w-5 h-5 text-gold-500" />
+    },
+    {
+      title: "Confiança e Rigor Ético",
+      desc: "Asseguramos total transparência operacional, contratos claros de parceria e estrito cumprimento dos preceitos éticos recomendados pela OAB.",
+      icon: <ShieldCheck className="w-5 h-5 text-gold-500" />
+    },
+    {
+      title: "Rede de Colaboração Sólida",
+      desc: "Fomentamos uma infraestrutura de suporte integrada que gera resultados reais e mitiga litígios de forma assertiva em todo o território nacional.",
+      icon: <Users className="w-5 h-5 text-gold-500" />
+    }
+  ];
+
+  const steps = [
+    {
+      title: "Preenchimento Cadastral",
+      desc: "Apresente suas aspirações, área de atuação principal e compartilhe como enxerga uma potencial cooperação institucional."
+    },
+    {
+      title: "Avaliação Estrutural",
+      desc: "Analisamos detalhadamente sua proposta em sinergia com o nosso modelo de governança interna para identificar oportunidades mútuas."
+    },
+    {
+      title: "Formalização da Aliança",
+      desc: "Definimos o modelo ideal de colaboração (indicações dirigidas, regime de co-advocacia ou desenvolvimento de projetos bilaterais)."
+    }
+  ];
+
   return (
-    <section className="mt-12">
-      <div className="max-w-6xl mx-auto px-4 sm:px-6">
-        <div className="pb-12 md:pb-20">
-          <div className="max-w-3xl mx-auto">
-            <div className="text-lg text-slate-500">
-              <h2 className="h3 font-playfair-display text-slate-800 mb-4">
-                Parceiros - Juntos Podemos Ir Mais Longe
+    <div className="min-h-screen bg-white">
+      {/* Banner */}
+      <section className="bg-navy-gradient text-white py-20 text-center relative overflow-hidden">
+        <div className="absolute inset-0 bg-gradient-to-b from-navy-900/40 to-navy-950/90 z-0"></div>
+        <div className="container mx-auto px-4 md:px-6 relative z-10 max-w-4xl">
+          <span className="text-gold-400 font-bold uppercase tracking-widest text-xs block mb-3">Rede de Sinergia</span>
+          <h1 className="text-3xl md:text-5xl font-serif font-bold mb-4 tracking-tight leading-tight">
+            Parcerias Estratégicas - Juntos Podemos Ir Mais Longe
+          </h1>
+          <p className="text-white/85 text-sm md:text-base max-w-2xl mx-auto leading-relaxed">
+            Na Advocacia Galvão, valorizamos alianças sólidas de benefício mútuo. Unimos inteligências e especialidades para resguardar a integridade de negócios e e-commerces em todo o país.
+          </p>
+        </div>
+      </section>
+
+      {/* Intro & Manifesto */}
+      <section className="py-24 bg-white">
+        <div className="container mx-auto px-4 md:px-6">
+          <div className="max-w-4xl mx-auto flex flex-col lg:flex-row items-center gap-16">
+            <div className="lg:w-1/2">
+              <span className="text-gold-600 font-bold uppercase tracking-widest text-xs md:text-sm block mb-3">Nosso Propósito</span>
+              <h2 className="text-2xl md:text-3xl lg:text-4xl font-serif font-bold text-navy-900 mb-6 leading-tight tracking-tight">
+                Construindo uma Rede de Defesa e Excelência
               </h2>
-
-              <p className="mb-8">
-                Na Advocacia Galvão, acreditamos no poder da colaboração. Seja
-                você um advogado, criador de conteúdo, palestrante ou mentor, há
-                espaço para criarmos parcerias que gerem valor para ambas as
-                partes. Nossa missão é oferecer soluções jurídicas de excelência
-                e, para isso, queremos construir uma rede de parceiros que
-                compartilhem desse mesmo propósito.
+              <p className="text-gray-500 text-sm md:text-base leading-relaxed mb-6">
+                Acreditamos firmemente no poder da cooperação estruturada. Quer você atue como advogado, criador de conteúdo, palestrante, mentor ou empresário de tecnologia, existe espaço em nossa banca para desenvolvermos conexões sólidas de negócios.
               </p>
-
-              <h3 className="h4 font-playfair-display text-slate-800 mb-4">
-                Quem Pode Ser Nosso Parceiro?
-              </h3>
-              <ul className="list-disc ml-6 mb-8">
-                <li>
-                  <strong>Advogados de Outros Estados:</strong> Para realização
-                  de audiências, diligências ou suporte jurídico em locais fora
-                  da nossa base de atuação.
-                </li>
-                <li>
-                  <strong>Advogados:</strong> Possui um cliente com uma demanda
-                  específica de direito digital? Podemos ajudar com a melhor
-                  solução, seja num simples assessoramento ou até na redação de
-                  petições.
-                </li>
-                <li>
-                  <strong>Criadores de Conteúdo:</strong> Blogueiros,
-                  influencers e especialistas que produzem conteúdo relevante
-                  sobre e-commerce, marketplaces ou empreendedorismo.
-                </li>
-                <li>
-                  <strong>Palestrantes e Mentores:</strong> Profissionais que
-                  lideram grupos de mentoria, eventos e treinamentos voltados
-                  para empresários.
-                </li>
-                <li>
-                  <strong>Empresas e Profissionais de Tecnologia:</strong>{" "}
-                  Desenvolvedores, plataformas e consultores especializados em
-                  soluções para e-commerce.
-                </li>
-                <li>
-                  <strong>Outros Profissionais:</strong> Qualquer pessoa ou
-                  empresa que enxergue valor em colaborar para resolver
-                  problemas e proteger negócios no setor jurídico, contando com
-                  o amplo know-how do escritório.
-                </li>
-              </ul>
-
-              <h3 className="h4 font-playfair-display text-slate-800 mb-4">
-                Por Que Fazer Parceria Com a Advocacia Galvão?
-              </h3>
-              <ul className="list-disc ml-6 mb-8">
-                <li>
-                  <strong>Benefício mútuo:</strong> Compartilhamos
-                  oportunidades, seja na indicação de clientes, palestras ou
-                  projetos conjuntos.
-                </li>
-                <li>
-                  <strong>Confiança e Profissionalismo:</strong> Garantimos
-                  transparência e ética em todas as parcerias.
-                </li>
-                <li>
-                  <strong>Rede de Colaboração:</strong> Juntos, podemos ampliar
-                  o impacto e gerar mais resultados para nossos clientes e
-                  parceiros.
-                </li>
-              </ul>
-
-              <h3 className="h4 font-playfair-display text-slate-800 mb-4">
-                Como Funciona?
-              </h3>
-              <ol className="list-decimal ml-6 mb-8">
-                <li>
-                  <strong>Preencha o Formulário:</strong> Conte-nos mais sobre
-                  você e como gostaria de colaborar conosco.
-                </li>
-                <li>
-                  <strong>Avaliação:</strong> Analisaremos sua proposta e
-                  entraremos em contato para alinhar as possibilidades.
-                </li>
-                <li>
-                  <strong>Estabelecimento da Parceria:</strong> Definiremos como
-                  podemos trabalhar juntos, seja por meio de indicações, divisão
-                  de honorários ou projetos em conjunto.
-                </li>
-              </ol>
-
-              <h3 className="h4 font-playfair-display text-slate-800 mb-4">
-                Entre em Contato e Seja Nosso Parceiro
-              </h3>
-              <p className="mb-8">
-                Preencha o formulário abaixo e envie sua proposta. Estamos
-                ansiosos para conhecer você!
+              <p className="text-gray-500 text-sm md:text-base leading-relaxed">
+                Nossa prioridade é prestar soluções jurídicas personalizadas com agilidade técnica, amparados por uma rede nacional de parceiros comprometidos com os mesmos valores de transparência e profissionalismo.
               </p>
+            </div>
 
-              <ParceiroForm />
-              <br />
-              <p className="mb-8">
-                Se preferir, entre em contato diretamente pelo WhatsApp. Estamos
-                à disposição para conversar.
-              </p>
+            {/* Value Props */}
+            <div className="lg:w-1/2 space-y-6">
+              {valueProps.map((prop, i) => (
+                <div
+                  key={i}
+                  className="p-6 bg-gray-50 rounded-xl border border-gray-100 flex items-start gap-4 hover:shadow-sm transition-shadow duration-300"
+                >
+                  <div className="p-2.5 bg-navy-900/5 rounded-lg text-gold-600 shrink-0 mt-1">
+                    {prop.icon}
+                  </div>
+                  <div>
+                    <h3 className="font-bold text-navy-900 text-sm md:text-base mb-1 tracking-tight">{prop.title}</h3>
+                    <p className="text-gray-500 text-xs md:text-sm leading-relaxed">{prop.desc}</p>
+                  </div>
+                </div>
+              ))}
             </div>
           </div>
         </div>
-      </div>
-    </section>
+      </section>
+
+      {/* Perfis de Parceiros */}
+      <section className="py-24 bg-gray-50/50 border-t border-b border-gray-100">
+        <div className="container mx-auto px-4 md:px-6">
+          <div className="text-center max-w-2xl mx-auto mb-16">
+            <span className="text-gold-600 font-bold uppercase tracking-widest text-xs md:text-sm block mb-3">Modelos de Colaboração</span>
+            <h2 className="text-3xl md:text-4xl font-serif font-bold text-navy-900 tracking-tight">
+              Quem Pode Ser Nosso Parceiro?
+            </h2>
+            <p className="text-gray-500 text-xs md:text-sm mt-3 max-w-lg mx-auto leading-relaxed">
+              Descubra onde o seu perfil se conecta ao ecossistema de soluções jurídicas avançadas do nosso escritório.
+            </p>
+          </div>
+
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-6xl mx-auto">
+            {partnerTypes.map((type, i) => (
+              <div
+                key={i}
+                className="p-8 bg-white rounded-xl border border-gray-100 shadow-sm hover:shadow-md transition-all duration-300 flex flex-col justify-between"
+              >
+                <div>
+                  <div className="w-12 h-12 bg-navy-900/5 flex items-center justify-center rounded-lg text-gold-600 mb-6 shrink-0">
+                    {type.icon}
+                  </div>
+                  <h3 className="text-lg font-bold text-navy-900 mb-3 tracking-tight">{type.title}</h3>
+                  <p className="text-gray-500 text-xs md:text-sm leading-relaxed">{type.desc}</p>
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Como Funciona */}
+      <section className="py-24 bg-white border-b border-gray-100">
+        <div className="container mx-auto px-4 md:px-6">
+          <div className="text-center max-w-2xl mx-auto mb-16">
+            <span className="text-gold-600 font-bold uppercase tracking-widest text-xs md:text-sm block mb-3">Fluxo de Integração</span>
+            <h2 className="text-3xl md:text-4xl font-serif font-bold text-navy-900 tracking-tight">
+              Como Funciona a Integração de Parcerias?
+            </h2>
+          </div>
+
+          <div className="grid md:grid-cols-3 gap-8 max-w-5xl mx-auto">
+            {steps.map((step, idx) => (
+              <div key={idx} className="p-8 bg-gray-50 rounded-xl border border-gray-100 relative">
+                <span className="absolute -top-4 left-8 w-8 h-8 rounded-full bg-navy-900 text-gold-400 flex items-center justify-center font-bold text-sm border border-gold-500/40">
+                  {idx + 1}
+                </span>
+                <h3 className="text-lg font-serif font-bold text-navy-900 mb-3 tracking-tight pt-2">
+                  {step.title}
+                </h3>
+                <p className="text-gray-500 text-xs md:text-sm leading-relaxed">
+                  {step.desc}
+                </p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* CTA Final */}
+      <section className="py-24 bg-white text-center">
+        <div className="container mx-auto px-4 md:px-6 max-w-2xl">
+          <Handshake className="w-14 h-14 text-gold-500 mx-auto mb-6" />
+          <h2 className="text-3xl md:text-4xl font-serif font-bold text-navy-900 tracking-tight mb-4">
+            Construa Uma Parceria Sólida Conosco
+          </h2>
+          <p className="text-gray-500 text-sm md:text-base mb-10 leading-relaxed max-w-xl mx-auto">
+            Seja integrando clientes, compartilhando conhecimento técnico ou prestando co-assessoria sob medida, estamos prontos para receber sua proposta.
+          </p>
+          <a
+            href="https://wa.me/5514997785999?text=Ol%C3%A1%2C%20vi%20seu%20site%20e%20gostaria%20de%20falar%20com%20o%20Advogado%20especialista%20em%20Direito%20Digital%20e%20Processo%20Civil."
+            className="inline-flex items-center gap-2 bg-gold-500 hover:bg-gold-600 text-navy-900 font-bold uppercase tracking-wider text-xs px-12 py-5 rounded-lg shadow-lg transition-all hover:shadow-gold-500/20 active:scale-95"
+          >
+            Seja um Parceiro Oficial
+            <ArrowRight className="w-4 h-4" />
+          </a>
+        </div>
+      </section>
+    </div>
   );
 }
