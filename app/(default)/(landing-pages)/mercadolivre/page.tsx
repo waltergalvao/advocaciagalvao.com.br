@@ -15,6 +15,7 @@ import { Quote } from "@/components/quote";
 import Footer from "@/components/ui/footer";
 import Header from "@/components/ui/header";
 import ButtonCta from "@/components/ui/button-cta";
+import { OpenAIAdsTracking } from "./openai-ads-tracking";
 
 export const metadata = {
   title: "Mercado Livre | Galvão Advocacia",
@@ -25,6 +26,7 @@ export const metadata = {
 export default function MercadoLivrePage() {
   return (
     <>
+      <OpenAIAdsTracking />
       {/* Section 1 */}
       <HeroMercadoLivre />
 
