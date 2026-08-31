@@ -31,7 +31,7 @@ export default function StandaloneLayout({
       <html lang="pt-BR">
         <GoogleTagManager gtmId="GTM-W4CNBX4C" />
         <body
-          className={`${inter.variable} ${playfair.variable} font-inter antialiased bg-white text-slate-800 tracking-tight`}
+          className={`${inter.variable} ${playfair.variable} font-sans antialiased bg-white text-slate-800 tracking-tight`}
         >
           {children}
         </body>

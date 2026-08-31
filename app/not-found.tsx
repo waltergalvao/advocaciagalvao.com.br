@@ -1,12 +1,13 @@
 import Link from "next/link";
-import Header from "@/components/ui/header";
-import Footer from "@/components/ui/footer";
+import { Navbar } from "./(default)/(main)/components/Navbar";
+import { Footer } from "./(default)/(main)/components/Footer";
+import { LegalModalsProvider } from "./(default)/(main)/components/LegalModalsProvider";
 
 export default function NotFound() {
   return (
     <div className="flex flex-col min-h-screen overflow-hidden">
       {/*  Site header */}
-      <Header />
+      <Navbar />
 
       {/*  Page content */}
       <main className="grow border-b border-slate-200">
@@ -43,6 +44,7 @@ export default function NotFound() {
 
       {/*  Site footer */}
       <Footer />
+      <LegalModalsProvider />
     </div>
   );
 }

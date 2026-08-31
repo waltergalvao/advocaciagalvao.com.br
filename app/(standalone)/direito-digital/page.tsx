@@ -40,7 +40,7 @@ export const metadata: Metadata = {
 
 export default function DireitoDigitalPage() {
   return (
-    <div className="min-h-screen bg-white font-inter text-navy-900 overflow-x-hidden">
+    <div className="min-h-screen bg-white font-sans text-navy-900 overflow-x-hidden">
       <Navbar />
       <main>
         <Hero />

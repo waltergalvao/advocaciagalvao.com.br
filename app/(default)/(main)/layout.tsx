@@ -1,32 +1,20 @@
-"use client";
+import { Navbar } from "./components/Navbar";
+import { Footer } from "./components/Footer";
+import { FloatingWhatsApp } from "./components/FloatingWhatsApp";
+import { LegalModalsProvider } from "./components/LegalModalsProvider";
 
-import { useEffect } from "react";
-
-import AOS from "aos";
-import "aos/dist/aos.css";
-
-import Header from "@/components/ui/header";
-import Footer from "@/components/ui/footer";
-
-export default function DefaultLayout({
+export default function MainLayout({
   children,
 }: {
   children: React.ReactNode;
 }) {
-  useEffect(() => {
-    AOS.init({
-      once: true,
-      disable: "phone",
-      duration: 600,
-      easing: "ease-out-sine",
-    });
-  });
-
   return (
-    <div className="flex flex-col min-h-screen overflow-hidden">
-      <Header />
-      <main className="grow mt-[64px] md:mt-[80px]">{children}</main>
+    <div className="min-h-screen bg-white font-sans text-navy-900 overflow-x-hidden">
+      <Navbar />
+      <main className="pt-[76px]">{children}</main>
       <Footer />
+      <FloatingWhatsApp />
+      <LegalModalsProvider />
     </div>
   );
 }

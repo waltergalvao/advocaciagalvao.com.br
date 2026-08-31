@@ -14,6 +14,9 @@ const withMDX = nextMDX({
 
 /** @type {import('next').NextConfig} */
 const nextConfig = {
+  experimental: {
+    viewTransition: true,
+  },
   pageExtensions: ["js", "jsx", "ts", "tsx", "mdx"],
   redirects: async () => {
     return [
