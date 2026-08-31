@@ -12,7 +12,6 @@ import Quote2 from "@/components/assets/quote2.jpeg";
 import Quote3 from "@/components/assets/quote-3.png";
 import Quote4 from "@/components/assets/quote-4.png";
 import { Quote } from "@/components/quote";
-import Footer from "@/components/ui/footer";
 import Header from "@/components/ui/header";
 import ButtonCta from "@/components/ui/button-cta";
 
